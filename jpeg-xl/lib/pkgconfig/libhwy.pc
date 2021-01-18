@@ -1,0 +1,10 @@
+prefix=/usr/local/Cellar/jpeg-xl/0.2
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libhwy
+Description: Efficient and performance-portable SIMD wrapper
+Version: 0.1
+Libs: -L${libdir} -lhwy
+Cflags: -I${includedir}

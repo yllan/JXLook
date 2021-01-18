@@ -14,6 +14,20 @@
 		8573556A25B56055005FF7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8573556825B56055005FF7C2 /* Main.storyboard */; };
 		8573557625B56055005FF7C2 /* JXLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573557525B56055005FF7C2 /* JXLookTests.swift */; };
 		8573558125B56055005FF7C2 /* JXLookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573558025B56055005FF7C2 /* JXLookUITests.swift */; };
+		857355D525B56132005FF7C2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8573559625B56132005FF7C2 /* LICENSE */; };
+		857355DB25B56132005FF7C2 /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355C625B56132005FF7C2 /* libjxl_threads.a */; };
+		857355DC25B56132005FF7C2 /* libhwy-test.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355C825B56132005FF7C2 /* libhwy-test.pc */; };
+		857355DD25B56132005FF7C2 /* libjxl.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355C925B56132005FF7C2 /* libjxl.pc */; };
+		857355DE25B56132005FF7C2 /* libjxl_threads.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355CA25B56132005FF7C2 /* libjxl_threads.pc */; };
+		857355DF25B56132005FF7C2 /* libhwy.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355CB25B56132005FF7C2 /* libhwy.pc */; };
+		857355E025B56132005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
+		857355E125B56132005FF7C2 /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CD25B56132005FF7C2 /* libhwy.a */; };
+		857355E225B56132005FF7C2 /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CE25B56132005FF7C2 /* libjxl.a */; };
+		857355E325B56132005FF7C2 /* libjxl_threads.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CF25B56132005FF7C2 /* libjxl_threads.dylib */; };
+		857355E425B56132005FF7C2 /* libjxl.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D025B56132005FF7C2 /* libjxl.0.dylib */; };
+		857355E525B56132005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */; };
+		857355E625B56132005FF7C2 /* libjxl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D225B56132005FF7C2 /* libjxl.dylib */; };
+		857355E725B56132005FF7C2 /* libjxl_threads.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,51 @@
 		8573557C25B56055005FF7C2 /* JXLookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXLookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8573558025B56055005FF7C2 /* JXLookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXLookUITests.swift; sourceTree = "<group>"; };
 		8573558225B56055005FF7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8573559625B56132005FF7C2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8573559F25B56132005FF7C2 /* highway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highway.h; sourceTree = "<group>"; };
+		857355A025B56132005FF7C2 /* nanobenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanobenchmark.h; sourceTree = "<group>"; };
+		857355A225B56132005FF7C2 /* test_util-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test_util-inl.h"; sourceTree = "<group>"; };
+		857355A325B56132005FF7C2 /* aligned_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aligned_allocator.h; sourceTree = "<group>"; };
+		857355A425B56132005FF7C2 /* cache_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache_control.h; sourceTree = "<group>"; };
+		857355A625B56132005FF7C2 /* x86_256-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86_256-inl.h"; sourceTree = "<group>"; };
+		857355A725B56132005FF7C2 /* shared-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shared-inl.h"; sourceTree = "<group>"; };
+		857355A825B56132005FF7C2 /* x86_128-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86_128-inl.h"; sourceTree = "<group>"; };
+		857355A925B56132005FF7C2 /* arm_neon-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "arm_neon-inl.h"; sourceTree = "<group>"; };
+		857355AA25B56132005FF7C2 /* wasm_128-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wasm_128-inl.h"; sourceTree = "<group>"; };
+		857355AB25B56132005FF7C2 /* x86_512-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86_512-inl.h"; sourceTree = "<group>"; };
+		857355AC25B56132005FF7C2 /* scalar-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "scalar-inl.h"; sourceTree = "<group>"; };
+		857355AD25B56132005FF7C2 /* set_macros-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "set_macros-inl.h"; sourceTree = "<group>"; };
+		857355AE25B56132005FF7C2 /* foreach_target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foreach_target.h; sourceTree = "<group>"; };
+		857355AF25B56132005FF7C2 /* targets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targets.h; sourceTree = "<group>"; };
+		857355B025B56132005FF7C2 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		857355B225B56132005FF7C2 /* color_encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color_encoding.h; sourceTree = "<group>"; };
+		857355B325B56132005FF7C2 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		857355B425B56132005FF7C2 /* parallel_runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_runner.h; sourceTree = "<group>"; };
+		857355B525B56132005FF7C2 /* jxl_threads_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jxl_threads_export.h; sourceTree = "<group>"; };
+		857355B625B56132005FF7C2 /* memory_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_manager.h; sourceTree = "<group>"; };
+		857355B725B56132005FF7C2 /* encode_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode_cxx.h; sourceTree = "<group>"; };
+		857355B825B56132005FF7C2 /* codestream_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codestream_header.h; sourceTree = "<group>"; };
+		857355B925B56132005FF7C2 /* jxl_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jxl_export.h; sourceTree = "<group>"; };
+		857355BA25B56132005FF7C2 /* thread_parallel_runner_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_parallel_runner_cxx.h; sourceTree = "<group>"; };
+		857355BB25B56132005FF7C2 /* thread_parallel_runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_parallel_runner.h; sourceTree = "<group>"; };
+		857355BC25B56132005FF7C2 /* decode_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_cxx.h; sourceTree = "<group>"; };
+		857355BD25B56132005FF7C2 /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		857355BE25B56132005FF7C2 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		857355C125B56132005FF7C2 /* math-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "math-inl.h"; sourceTree = "<group>"; };
+		857355C325B56132005FF7C2 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		857355C625B56132005FF7C2 /* libjxl_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjxl_threads.a; sourceTree = "<group>"; };
+		857355C825B56132005FF7C2 /* libhwy-test.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libhwy-test.pc"; sourceTree = "<group>"; };
+		857355C925B56132005FF7C2 /* libjxl.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libjxl.pc; sourceTree = "<group>"; };
+		857355CA25B56132005FF7C2 /* libjxl_threads.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libjxl_threads.pc; sourceTree = "<group>"; };
+		857355CB25B56132005FF7C2 /* libhwy.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libhwy.pc; sourceTree = "<group>"; };
+		857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.2.0.dylib; sourceTree = "<group>"; };
+		857355CD25B56132005FF7C2 /* libhwy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhwy.a; sourceTree = "<group>"; };
+		857355CE25B56132005FF7C2 /* libjxl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjxl.a; sourceTree = "<group>"; };
+		857355CF25B56132005FF7C2 /* libjxl_threads.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.dylib; sourceTree = "<group>"; };
+		857355D025B56132005FF7C2 /* libjxl.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.dylib; sourceTree = "<group>"; };
+		857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.2.0.dylib; sourceTree = "<group>"; };
+		857355D225B56132005FF7C2 /* libjxl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.dylib; sourceTree = "<group>"; };
+		857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +114,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857355E225B56132005FF7C2 /* libjxl.a in Frameworks */,
+				857355DB25B56132005FF7C2 /* libjxl_threads.a in Frameworks */,
+				857355E025B56132005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
+				857355E625B56132005FF7C2 /* libjxl.dylib in Frameworks */,
+				857355E725B56132005FF7C2 /* libjxl_threads.0.dylib in Frameworks */,
+				857355E425B56132005FF7C2 /* libjxl.0.dylib in Frameworks */,
+				857355E325B56132005FF7C2 /* libjxl_threads.dylib in Frameworks */,
+				857355E525B56132005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
+				857355E125B56132005FF7C2 /* libhwy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +146,7 @@
 		8573555425B56054005FF7C2 = {
 			isa = PBXGroup;
 			children = (
+				8573559425B56132005FF7C2 /* jpeg-xl */,
 				8573555F25B56054005FF7C2 /* JXLook */,
 				8573557425B56055005FF7C2 /* JXLookTests */,
 				8573557F25B56055005FF7C2 /* JXLookUITests */,
@@ -125,6 +194,138 @@
 				8573558225B56055005FF7C2 /* Info.plist */,
 			);
 			path = JXLookUITests;
+			sourceTree = "<group>";
+		};
+		8573559425B56132005FF7C2 /* jpeg-xl */ = {
+			isa = PBXGroup;
+			children = (
+				8573559625B56132005FF7C2 /* LICENSE */,
+				8573559D25B56132005FF7C2 /* include */,
+				857355C525B56132005FF7C2 /* lib */,
+			);
+			path = "jpeg-xl";
+			sourceTree = "<group>";
+		};
+		8573559D25B56132005FF7C2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8573559E25B56132005FF7C2 /* hwy */,
+				857355B125B56132005FF7C2 /* jxl */,
+				857355BF25B56132005FF7C2 /* contrib */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8573559E25B56132005FF7C2 /* hwy */ = {
+			isa = PBXGroup;
+			children = (
+				8573559F25B56132005FF7C2 /* highway.h */,
+				857355A025B56132005FF7C2 /* nanobenchmark.h */,
+				857355A125B56132005FF7C2 /* tests */,
+				857355A325B56132005FF7C2 /* aligned_allocator.h */,
+				857355A425B56132005FF7C2 /* cache_control.h */,
+				857355A525B56132005FF7C2 /* ops */,
+				857355AE25B56132005FF7C2 /* foreach_target.h */,
+				857355AF25B56132005FF7C2 /* targets.h */,
+				857355B025B56132005FF7C2 /* base.h */,
+			);
+			path = hwy;
+			sourceTree = "<group>";
+		};
+		857355A125B56132005FF7C2 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				857355A225B56132005FF7C2 /* test_util-inl.h */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		857355A525B56132005FF7C2 /* ops */ = {
+			isa = PBXGroup;
+			children = (
+				857355A625B56132005FF7C2 /* x86_256-inl.h */,
+				857355A725B56132005FF7C2 /* shared-inl.h */,
+				857355A825B56132005FF7C2 /* x86_128-inl.h */,
+				857355A925B56132005FF7C2 /* arm_neon-inl.h */,
+				857355AA25B56132005FF7C2 /* wasm_128-inl.h */,
+				857355AB25B56132005FF7C2 /* x86_512-inl.h */,
+				857355AC25B56132005FF7C2 /* scalar-inl.h */,
+				857355AD25B56132005FF7C2 /* set_macros-inl.h */,
+			);
+			path = ops;
+			sourceTree = "<group>";
+		};
+		857355B125B56132005FF7C2 /* jxl */ = {
+			isa = PBXGroup;
+			children = (
+				857355B225B56132005FF7C2 /* color_encoding.h */,
+				857355B325B56132005FF7C2 /* types.h */,
+				857355B425B56132005FF7C2 /* parallel_runner.h */,
+				857355B525B56132005FF7C2 /* jxl_threads_export.h */,
+				857355B625B56132005FF7C2 /* memory_manager.h */,
+				857355B725B56132005FF7C2 /* encode_cxx.h */,
+				857355B825B56132005FF7C2 /* codestream_header.h */,
+				857355B925B56132005FF7C2 /* jxl_export.h */,
+				857355BA25B56132005FF7C2 /* thread_parallel_runner_cxx.h */,
+				857355BB25B56132005FF7C2 /* thread_parallel_runner.h */,
+				857355BC25B56132005FF7C2 /* decode_cxx.h */,
+				857355BD25B56132005FF7C2 /* encode.h */,
+				857355BE25B56132005FF7C2 /* decode.h */,
+			);
+			path = jxl;
+			sourceTree = "<group>";
+		};
+		857355BF25B56132005FF7C2 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				857355C025B56132005FF7C2 /* math */,
+				857355C225B56132005FF7C2 /* image */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		857355C025B56132005FF7C2 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				857355C125B56132005FF7C2 /* math-inl.h */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		857355C225B56132005FF7C2 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				857355C325B56132005FF7C2 /* image.h */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		857355C525B56132005FF7C2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				857355C625B56132005FF7C2 /* libjxl_threads.a */,
+				857355C725B56132005FF7C2 /* pkgconfig */,
+				857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */,
+				857355CD25B56132005FF7C2 /* libhwy.a */,
+				857355CE25B56132005FF7C2 /* libjxl.a */,
+				857355CF25B56132005FF7C2 /* libjxl_threads.dylib */,
+				857355D025B56132005FF7C2 /* libjxl.0.dylib */,
+				857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */,
+				857355D225B56132005FF7C2 /* libjxl.dylib */,
+				857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		857355C725B56132005FF7C2 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				857355C825B56132005FF7C2 /* libhwy-test.pc */,
+				857355C925B56132005FF7C2 /* libjxl.pc */,
+				857355CA25B56132005FF7C2 /* libjxl_threads.pc */,
+				857355CB25B56132005FF7C2 /* libhwy.pc */,
+			);
+			path = pkgconfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +432,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8573556725B56055005FF7C2 /* Assets.xcassets in Resources */,
+				857355DC25B56132005FF7C2 /* libhwy-test.pc in Resources */,
 				8573556A25B56055005FF7C2 /* Main.storyboard in Resources */,
+				857355DE25B56132005FF7C2 /* libjxl_threads.pc in Resources */,
+				857355DD25B56132005FF7C2 /* libjxl.pc in Resources */,
+				857355D525B56132005FF7C2 /* LICENSE in Resources */,
+				857355DF25B56132005FF7C2 /* libhwy.pc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +641,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/0.2/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -455,6 +665,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/0.2/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
