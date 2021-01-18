@@ -1,8 +1,0 @@
-prefix=/usr/local/Cellar/jpeg-xl/0.2
-includedir=${prefix}/include
-
-Name: libhwy-test
-Description: Efficient and performance-portable SIMD wrapper, test helpers.
-Requires: gtest
-Version: 0.1
-Cflags: -I${includedir}
