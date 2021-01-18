@@ -636,6 +636,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,7 +644,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/0.2/lib",
+					"$(PROJECT_DIR)/jpeg-xl/lib/**",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -661,6 +662,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,7 +670,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/0.2/lib",
+					"$(PROJECT_DIR)/jpeg-xl/lib/**",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
