@@ -8,7 +8,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    @IBOutlet weak var imageView: NSImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +18,10 @@ class ViewController: NSViewController {
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            if let doc = representedObject as? Document, let img = doc.image {
+                self.imageView.image = img
+                self.imageView.frame = CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height)
+            }
         }
     }
 

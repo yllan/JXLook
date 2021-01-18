@@ -14,20 +14,10 @@
 		8573556A25B56055005FF7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8573556825B56055005FF7C2 /* Main.storyboard */; };
 		8573557625B56055005FF7C2 /* JXLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573557525B56055005FF7C2 /* JXLookTests.swift */; };
 		8573558125B56055005FF7C2 /* JXLookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573558025B56055005FF7C2 /* JXLookUITests.swift */; };
-		857355D525B56132005FF7C2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8573559625B56132005FF7C2 /* LICENSE */; };
-		857355DB25B56132005FF7C2 /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355C625B56132005FF7C2 /* libjxl_threads.a */; };
-		857355DC25B56132005FF7C2 /* libhwy-test.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355C825B56132005FF7C2 /* libhwy-test.pc */; };
-		857355DD25B56132005FF7C2 /* libjxl.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355C925B56132005FF7C2 /* libjxl.pc */; };
-		857355DE25B56132005FF7C2 /* libjxl_threads.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355CA25B56132005FF7C2 /* libjxl_threads.pc */; };
-		857355DF25B56132005FF7C2 /* libhwy.pc in Resources */ = {isa = PBXBuildFile; fileRef = 857355CB25B56132005FF7C2 /* libhwy.pc */; };
-		857355E025B56132005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
-		857355E125B56132005FF7C2 /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CD25B56132005FF7C2 /* libhwy.a */; };
-		857355E225B56132005FF7C2 /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CE25B56132005FF7C2 /* libjxl.a */; };
-		857355E325B56132005FF7C2 /* libjxl_threads.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CF25B56132005FF7C2 /* libjxl_threads.dylib */; };
-		857355E425B56132005FF7C2 /* libjxl.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D025B56132005FF7C2 /* libjxl.0.dylib */; };
-		857355E525B56132005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */; };
-		857355E625B56132005FF7C2 /* libjxl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D225B56132005FF7C2 /* libjxl.dylib */; };
-		857355E725B56132005FF7C2 /* libjxl_threads.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */; };
+		8573562625B57210005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573562725B57210005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573563125B57300005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */; };
+		8573563425B57304005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +36,21 @@
 			remoteInfo = JXLook;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8573560925B56B22005FF7C2 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8573562625B57210005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */,
+				8573562725B57210005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8573555D25B56054005FF7C2 /* JXLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +112,7 @@
 		857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.2.0.dylib; sourceTree = "<group>"; };
 		857355D225B56132005FF7C2 /* libjxl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.dylib; sourceTree = "<group>"; };
 		857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.dylib; sourceTree = "<group>"; };
+		857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXLook-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,15 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857355E225B56132005FF7C2 /* libjxl.a in Frameworks */,
-				857355DB25B56132005FF7C2 /* libjxl_threads.a in Frameworks */,
-				857355E025B56132005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
-				857355E625B56132005FF7C2 /* libjxl.dylib in Frameworks */,
-				857355E725B56132005FF7C2 /* libjxl_threads.0.dylib in Frameworks */,
-				857355E425B56132005FF7C2 /* libjxl.0.dylib in Frameworks */,
-				857355E325B56132005FF7C2 /* libjxl_threads.dylib in Frameworks */,
-				857355E525B56132005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
-				857355E125B56132005FF7C2 /* libhwy.a in Frameworks */,
+				8573563125B57300005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
+				8573563425B57304005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +150,7 @@
 				8573557425B56055005FF7C2 /* JXLookTests */,
 				8573557F25B56055005FF7C2 /* JXLookUITests */,
 				8573555E25B56054005FF7C2 /* Products */,
+				8573563025B57300005FF7C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +174,7 @@
 				8573556825B56055005FF7C2 /* Main.storyboard */,
 				8573556B25B56055005FF7C2 /* Info.plist */,
 				8573556C25B56055005FF7C2 /* JXLook.entitlements */,
+				857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */,
 			);
 			path = JXLook;
 			sourceTree = "<group>";
@@ -328,6 +329,13 @@
 			path = pkgconfig;
 			sourceTree = "<group>";
 		};
+		8573563025B57300005FF7C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +346,7 @@
 				8573555925B56054005FF7C2 /* Sources */,
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
+				8573560925B56B22005FF7C2 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -395,6 +404,7 @@
 				TargetAttributes = {
 					8573555C25B56054005FF7C2 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					8573557025B56055005FF7C2 = {
 						CreatedOnToolsVersion = 12.2;
@@ -432,12 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8573556725B56055005FF7C2 /* Assets.xcassets in Resources */,
-				857355DC25B56132005FF7C2 /* libhwy-test.pc in Resources */,
 				8573556A25B56055005FF7C2 /* Main.storyboard in Resources */,
-				857355DE25B56132005FF7C2 /* libjxl_threads.pc in Resources */,
-				857355DD25B56132005FF7C2 /* libjxl.pc in Resources */,
-				857355D525B56132005FF7C2 /* LICENSE in Resources */,
-				857355DF25B56132005FF7C2 /* libhwy.pc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +636,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = JXLook/JXLook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
@@ -639,15 +646,18 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/../Frameworks",
+					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)/jpeg-xl/lib/**",
+					"$(inherited)",
+					"$(PROJECT_DIR)/jpeg-xl/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JXLook/JXLook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -657,7 +667,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = JXLook/JXLook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
@@ -665,15 +677,17 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/../Frameworks",
+					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)/jpeg-xl/lib/**",
+					"$(inherited)",
+					"$(PROJECT_DIR)/jpeg-xl/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JXLook/JXLook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
