@@ -53,25 +53,23 @@ class Document: NSDocument {
             Swift.print("Cannot set runner")
         }
         
-//        var fptr = UnsafeMutablePointer<JxlPixelFormat>.allocate(capacity: 1)
-//        JxlDecoderDefaultPixelFormat(decoder, fptr)
-//        Swift.print("format: \(fptr.pointee)")
         JxlDecoderSubscribeEvents(decoder, Int32(JXL_DEC_BASIC_INFO.rawValue | JXL_DEC_FULL_IMAGE.rawValue))
         
-        data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
+        let _ = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
             var nextIn = bytes.bindMemory(to: UInt8.self).baseAddress
             var available: Int = data.count
             let infoPtr = UnsafeMutablePointer<JxlBasicInfo>.allocate(capacity: 1)
-            while true {
+            
+            parsingLoop: while true {
                 let result = JxlDecoderProcessInput(decoder, &nextIn, &available)
-                Swift.print("r: \(result), avail: \(available)")
+                
                 switch result {
                 case JXL_DEC_BASIC_INFO:
                     if JxlDecoderGetBasicInfo(decoder, infoPtr) != JXL_DEC_SUCCESS {
                         Swift.print("Cannot get basic info")
-                        break
+                        break parsingLoop
                     }
-                    Swift.print("basic info: \(infoPtr.pointee)")
+//                    Swift.print("basic info: \(infoPtr.pointee)")
                 case JXL_DEC_SUCCESS:
                     return true
                 case JXL_DEC_NEED_IMAGE_OUT_BUFFER:
@@ -102,6 +100,7 @@ class Document: NSDocument {
                     Swift.print("result \(result)")
                 }
             }
+            return false
         }
     }
 

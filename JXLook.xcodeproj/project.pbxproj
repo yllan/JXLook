@@ -14,10 +14,16 @@
 		8573556A25B56055005FF7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8573556825B56055005FF7C2 /* Main.storyboard */; };
 		8573557625B56055005FF7C2 /* JXLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573557525B56055005FF7C2 /* JXLookTests.swift */; };
 		8573558125B56055005FF7C2 /* JXLookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573558025B56055005FF7C2 /* JXLookUITests.swift */; };
-		8573562625B57210005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573562725B57210005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573563125B57300005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */; };
-		8573563425B57304005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
+		8573565625B5D743005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
+		8573565925B5D743005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; };
+		8573565E25B5D774005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573567525B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; };
+		8573567625B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; };
+		8573567725B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; };
+		8573567825B5DF73005FF7C2 /* libbrotlicommon.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573567925B5DF73005FF7C2 /* libbrotlidec.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573567A25B5DF73005FF7C2 /* libbrotlienc.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +50,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8573562625B57210005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */,
-				8573562725B57210005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */,
+				8573567825B5DF73005FF7C2 /* libbrotlicommon.1.0.9.dylib in Copy Files */,
+				8573567925B5DF73005FF7C2 /* libbrotlidec.1.0.9.dylib in Copy Files */,
+				8573567A25B5DF73005FF7C2 /* libbrotlienc.1.0.9.dylib in Copy Files */,
+				8573565E25B5D774005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */,
+				8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,20 +108,13 @@
 		857355BE25B56132005FF7C2 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
 		857355C125B56132005FF7C2 /* math-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "math-inl.h"; sourceTree = "<group>"; };
 		857355C325B56132005FF7C2 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
-		857355C625B56132005FF7C2 /* libjxl_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjxl_threads.a; sourceTree = "<group>"; };
-		857355C825B56132005FF7C2 /* libhwy-test.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libhwy-test.pc"; sourceTree = "<group>"; };
-		857355C925B56132005FF7C2 /* libjxl.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libjxl.pc; sourceTree = "<group>"; };
-		857355CA25B56132005FF7C2 /* libjxl_threads.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libjxl_threads.pc; sourceTree = "<group>"; };
-		857355CB25B56132005FF7C2 /* libhwy.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libhwy.pc; sourceTree = "<group>"; };
-		857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.2.0.dylib; sourceTree = "<group>"; };
-		857355CD25B56132005FF7C2 /* libhwy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhwy.a; sourceTree = "<group>"; };
-		857355CE25B56132005FF7C2 /* libjxl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjxl.a; sourceTree = "<group>"; };
-		857355CF25B56132005FF7C2 /* libjxl_threads.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.dylib; sourceTree = "<group>"; };
-		857355D025B56132005FF7C2 /* libjxl.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.dylib; sourceTree = "<group>"; };
-		857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.2.0.dylib; sourceTree = "<group>"; };
-		857355D225B56132005FF7C2 /* libjxl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.dylib; sourceTree = "<group>"; };
-		857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.dylib; sourceTree = "<group>"; };
 		857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXLook-Bridging-Header.h"; sourceTree = "<group>"; };
+		8573564725B5D4E2005FF7C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.2.0.dylib; sourceTree = "<group>"; };
+		8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.2.0.dylib; sourceTree = "<group>"; };
+		8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlidec.1.0.9.dylib; sourceTree = "<group>"; };
+		8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlienc.1.0.9.dylib; sourceTree = "<group>"; };
+		8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlicommon.1.0.9.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8573563125B57300005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
-				8573563425B57304005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
+				8573567725B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib in Frameworks */,
+				8573567525B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib in Frameworks */,
+				8573565625B5D743005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
+				8573565925B5D743005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
+				8573567625B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +207,7 @@
 			children = (
 				8573559625B56132005FF7C2 /* LICENSE */,
 				8573559D25B56132005FF7C2 /* include */,
-				857355C525B56132005FF7C2 /* lib */,
+				8573564F25B5D742005FF7C2 /* lib */,
 			);
 			path = "jpeg-xl";
 			sourceTree = "<group>";
@@ -301,39 +306,24 @@
 			path = image;
 			sourceTree = "<group>";
 		};
-		857355C525B56132005FF7C2 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				857355C625B56132005FF7C2 /* libjxl_threads.a */,
-				857355C725B56132005FF7C2 /* pkgconfig */,
-				857355CC25B56132005FF7C2 /* libjxl_threads.0.2.0.dylib */,
-				857355CD25B56132005FF7C2 /* libhwy.a */,
-				857355CE25B56132005FF7C2 /* libjxl.a */,
-				857355CF25B56132005FF7C2 /* libjxl_threads.dylib */,
-				857355D025B56132005FF7C2 /* libjxl.0.dylib */,
-				857355D125B56132005FF7C2 /* libjxl.0.2.0.dylib */,
-				857355D225B56132005FF7C2 /* libjxl.dylib */,
-				857355D325B56132005FF7C2 /* libjxl_threads.0.dylib */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		857355C725B56132005FF7C2 /* pkgconfig */ = {
-			isa = PBXGroup;
-			children = (
-				857355C825B56132005FF7C2 /* libhwy-test.pc */,
-				857355C925B56132005FF7C2 /* libjxl.pc */,
-				857355CA25B56132005FF7C2 /* libjxl_threads.pc */,
-				857355CB25B56132005FF7C2 /* libhwy.pc */,
-			);
-			path = pkgconfig;
-			sourceTree = "<group>";
-		};
 		8573563025B57300005FF7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8573564725B5D4E2005FF7C2 /* libc++.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8573564F25B5D742005FF7C2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */,
+				8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */,
+				8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */,
+				8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */,
+				8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +337,7 @@
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
 				8573560925B56B22005FF7C2 /* Copy Files */,
+				8573566425B5DA2F005FF7C2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -461,6 +452,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8573566425B5DA2F005FF7C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n    done\n}\n\nchange_paths $app\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8573555925B56054005FF7C2 /* Sources */ = {
@@ -654,6 +665,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/jpeg-xl/lib",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JXLook/JXLook-Bridging-Header.h";
@@ -685,6 +697,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/jpeg-xl/lib",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JXLook/JXLook-Bridging-Header.h";
