@@ -12,7 +12,7 @@
 			<key>CFBundleTypeName</key>
 			<string>JPEG XL</string>
 			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
+			<string>Viewer</string>
 			<key>LSHandlerRank</key>
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
