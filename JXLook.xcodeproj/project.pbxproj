@@ -24,6 +24,7 @@
 		8573567825B5DF73005FF7C2 /* libbrotlicommon.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8573567925B5DF73005FF7C2 /* libbrotlidec.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8573567A25B5DF73005FF7C2 /* libbrotlienc.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598D00E25B805AE00C08958 /* CenterClipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlidec.1.0.9.dylib; sourceTree = "<group>"; };
 		8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlienc.1.0.9.dylib; sourceTree = "<group>"; };
 		8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlicommon.1.0.9.dylib; sourceTree = "<group>"; };
+		8598D00E25B805AE00C08958 /* CenterClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				8573556B25B56055005FF7C2 /* Info.plist */,
 				8573556C25B56055005FF7C2 /* JXLook.entitlements */,
 				857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */,
+				8598D00E25B805AE00C08958 /* CenterClipView.swift */,
 			);
 			path = JXLook;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				8573556325B56054005FF7C2 /* ViewController.swift in Sources */,
 				8573556125B56054005FF7C2 /* AppDelegate.swift in Sources */,
 				8573556525B56054005FF7C2 /* Document.swift in Sources */,
+				8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

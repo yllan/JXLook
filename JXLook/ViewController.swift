@@ -44,7 +44,7 @@ class ViewController: NSViewController {
     
     override func viewDidLayout() {
         if zoomToFit {
-            imageView.frame.size = scrollView.frame.size
+//            imageView.frame.size = scrollView.frame.size
         }
     }
 }
