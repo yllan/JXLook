@@ -176,13 +176,13 @@
 			children = (
 				8573556025B56054005FF7C2 /* AppDelegate.swift */,
 				8573556225B56054005FF7C2 /* ViewController.swift */,
+				8598D00E25B805AE00C08958 /* CenterClipView.swift */,
 				8573556425B56054005FF7C2 /* Document.swift */,
 				8573556625B56055005FF7C2 /* Assets.xcassets */,
 				8573556825B56055005FF7C2 /* Main.storyboard */,
 				8573556B25B56055005FF7C2 /* Info.plist */,
 				8573556C25B56055005FF7C2 /* JXLook.entitlements */,
 				857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */,
-				8598D00E25B805AE00C08958 /* CenterClipView.swift */,
 			);
 			path = JXLook;
 			sourceTree = "<group>";

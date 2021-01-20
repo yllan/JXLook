@@ -718,7 +718,7 @@
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-UZ-FxQ">
                                             <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="qcU-ch-5KV"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" id="qcU-ch-5KV"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.62882173060000002" green="0.6251477003" blue="0.62501531840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -741,6 +741,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clipView" destination="Bk8-bN-JcH" id="xou-WW-SV4"/>
                         <outlet property="imageView" destination="mxC-UZ-FxQ" id="CVH-nb-DYB"/>
                         <outlet property="scrollView" destination="hza-MG-db3" id="ISY-98-hxR"/>
                     </connections>
