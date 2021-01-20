@@ -710,33 +710,34 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" allowsMagnification="YES" maxMagnification="40" minMagnification="0.01" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hza-MG-db3">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="-1" y="-1" width="482" height="272"/>
                                 <clipView key="contentView" id="Bk8-bN-JcH" customClass="CenterClipView" customModule="JXLook" customModuleProvider="target">
-                                    <rect key="frame" x="1" y="1" width="478" height="268"/>
+                                    <rect key="frame" x="1" y="1" width="480" height="270"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-UZ-FxQ">
-                                            <rect key="frame" x="0.0" y="-2" width="480" height="270"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="qcU-ch-5KV"/>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.62882173060000002" green="0.6251477003" blue="0.62501531840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="JaZ-Ha-VZ6">
-                                    <rect key="frame" x="1" y="253" width="478" height="16"/>
+                                    <rect key="frame" x="1" y="255" width="480" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="qOe-g1-y4E">
-                                    <rect key="frame" x="463" y="1" width="16" height="268"/>
+                                    <rect key="frame" x="465" y="1" width="16" height="270"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="hza-MG-db3" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="mfz-ma-N1z"/>
-                            <constraint firstAttribute="bottom" secondItem="hza-MG-db3" secondAttribute="bottom" id="mga-XU-ODG"/>
-                            <constraint firstItem="hza-MG-db3" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="nBk-Np-inj"/>
-                            <constraint firstAttribute="trailing" secondItem="hza-MG-db3" secondAttribute="trailing" id="tSB-GU-gji"/>
+                            <constraint firstItem="hza-MG-db3" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="-1" id="mfz-ma-N1z"/>
+                            <constraint firstAttribute="bottom" secondItem="hza-MG-db3" secondAttribute="bottom" constant="-1" id="mga-XU-ODG"/>
+                            <constraint firstItem="hza-MG-db3" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="-1" id="nBk-Np-inj"/>
+                            <constraint firstAttribute="trailing" secondItem="hza-MG-db3" secondAttribute="trailing" constant="-1" id="tSB-GU-gji"/>
                         </constraints>
                     </view>
                     <connections>
