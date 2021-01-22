@@ -69,7 +69,7 @@ class Document: NSDocument {
                         Swift.print("Cannot get basic info")
                         break parsingLoop
                     }
-//                    Swift.print("basic info: \(infoPtr.pointee)")
+                    Swift.print("basic info: \(infoPtr.pointee)")
                 case JXL_DEC_SUCCESS:
                     return true
                 case JXL_DEC_NEED_IMAGE_OUT_BUFFER:
@@ -90,6 +90,7 @@ class Document: NSDocument {
                     let planes = UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>.allocate(capacity: 1)
                     planes.pointee = buffer.baseAddress
                     if let imageRep = NSBitmapImageRep(bitmapDataPlanes: planes, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32) {
+                        imageRep.size = CGSize(width: Int(info.xsize) / 2, height: Int(info.ysize) / 2)
                         let img = NSImage(size: imageRep.size)
                         img.addRepresentation(imageRep)
                         self.image = img
