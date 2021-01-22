@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreviewViewController" customModule="JXQuickLook" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="SGa-Y8-4NB" id="Daf-yG-dIr"/>
+                <outlet property="view" destination="c22-O7-iKe" id="NRM-P4-wb6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" userLabel="Preview View">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SGa-Y8-4NB">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="4AZ-eX-Yrx"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="SGa-Y8-4NB" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="1ep-7l-JfO"/>
+                <constraint firstAttribute="bottom" secondItem="SGa-Y8-4NB" secondAttribute="bottom" id="UWP-JJ-zfz"/>
+                <constraint firstAttribute="trailing" secondItem="SGa-Y8-4NB" secondAttribute="trailing" id="jcC-ly-YiJ"/>
+                <constraint firstItem="SGa-Y8-4NB" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="jfe-cI-n86"/>
+            </constraints>
+            <point key="canvasLocation" x="-27" y="154"/>
+        </customView>
+    </objects>
+</document>

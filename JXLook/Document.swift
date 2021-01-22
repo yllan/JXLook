@@ -47,62 +47,7 @@ class Document: NSDocument {
         guard isValid else {
             throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
         }
-        let decoder = JxlDecoderCreate(nil)
-        let runner = JxlThreadParallelRunnerCreate(nil, JxlThreadParallelRunnerDefaultNumWorkerThreads())
-        if JxlDecoderSetParallelRunner(decoder, JxlThreadParallelRunner, runner) != JXL_DEC_SUCCESS {
-            Swift.print("Cannot set runner")
-        }
-        
-        JxlDecoderSubscribeEvents(decoder, Int32(JXL_DEC_BASIC_INFO.rawValue | JXL_DEC_FULL_IMAGE.rawValue))
-        
-        let _ = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
-            var nextIn = bytes.bindMemory(to: UInt8.self).baseAddress
-            var available: Int = data.count
-            let infoPtr = UnsafeMutablePointer<JxlBasicInfo>.allocate(capacity: 1)
-            
-            parsingLoop: while true {
-                let result = JxlDecoderProcessInput(decoder, &nextIn, &available)
-                
-                switch result {
-                case JXL_DEC_BASIC_INFO:
-                    if JxlDecoderGetBasicInfo(decoder, infoPtr) != JXL_DEC_SUCCESS {
-                        Swift.print("Cannot get basic info")
-                        break parsingLoop
-                    }
-                    Swift.print("basic info: \(infoPtr.pointee)")
-                case JXL_DEC_SUCCESS:
-                    return true
-                case JXL_DEC_NEED_IMAGE_OUT_BUFFER:
-                    let info = infoPtr.pointee
-                    var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
-                    var outputBufferSize: Int = 0
-                    if JxlDecoderImageOutBufferSize(decoder, &format, &outputBufferSize) != JXL_DEC_SUCCESS {
-                        Swift.print("cannot get size")
-                    }
-                    Swift.print("buffer size: \(outputBufferSize)")
-                    let buffer = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: outputBufferSize)
-                    if JxlDecoderSetImageOutBuffer(decoder, &format, buffer.baseAddress, outputBufferSize) != JXL_DEC_SUCCESS {
-                        Swift.print("cannot write buffer")
-                    }
-//                    for i in 0..<200 {
-//                        Swift.print(buffer[i])
-//                    }
-                    let planes = UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>.allocate(capacity: 1)
-                    planes.pointee = buffer.baseAddress
-                    if let imageRep = NSBitmapImageRep(bitmapDataPlanes: planes, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32) {
-                        imageRep.size = CGSize(width: Int(info.xsize) / 2, height: Int(info.ysize) / 2)
-                        let img = NSImage(size: imageRep.size)
-                        img.addRepresentation(imageRep)
-                        self.image = img
-                    }
-                case JXL_DEC_ERROR:
-                    return false
-                default:
-                    Swift.print("result \(result)")
-                }
-            }
-            return false
-        }
+        self.image = try? JXL.parse(data: data)
     }
 
 
