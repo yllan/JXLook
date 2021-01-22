@@ -25,6 +25,22 @@
 		8573567925B5DF73005FF7C2 /* libbrotlidec.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8573567A25B5DF73005FF7C2 /* libbrotlienc.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598D00E25B805AE00C08958 /* CenterClipView.swift */; };
+		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
+		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
+		85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */; };
+		85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; };
+		85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; };
+		85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; };
+		85FC6E3225BACF1000A1AAF4 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
+		85FC6E3325BACF1900A1AAF4 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; };
+		85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.0.9.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.0.9.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.0.9.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E3E25BACF8300A1AAF4 /* libjxl_threads.0.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E4125BACF8800A1AAF4 /* libjxl.0.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E5025BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
+		85FC6E5125BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +58,13 @@
 			remoteGlobalIDString = 8573555C25B56054005FF7C2;
 			remoteInfo = JXLook;
 		};
+		85FC6DD325BAC56E00A1AAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8573555525B56054005FF7C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FC6DC725BAC56E00A1AAF4;
+			remoteInfo = JXQuickLook;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +81,31 @@
 				8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */,
 			);
 			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FC6E3425BACF6D00A1AAF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.0.9.dylib in CopyFiles */,
+				85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.0.9.dylib in CopyFiles */,
+				85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.0.9.dylib in CopyFiles */,
+				85FC6E3E25BACF8300A1AAF4 /* libjxl_threads.0.2.0.dylib in CopyFiles */,
+				85FC6E4125BACF8800A1AAF4 /* libjxl.0.2.0.dylib in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -117,6 +165,14 @@
 		8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlienc.1.0.9.dylib; sourceTree = "<group>"; };
 		8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlicommon.1.0.9.dylib; sourceTree = "<group>"; };
 		8598D00E25B805AE00C08958 /* CenterClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
+		85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		85FC6DCF25BAC56E00A1AAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
+		85FC6DD125BAC56E00A1AAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FC6DD225BAC56E00A1AAF4 /* JXQuickLook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JXQuickLook.entitlements; sourceTree = "<group>"; };
+		85FC6E4725BAD00000A1AAF4 /* JXQuickLook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXQuickLook-Bridging-Header.h"; sourceTree = "<group>"; };
+		85FC6E4F25BAD03500A1AAF4 /* JXL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +202,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85FC6DC525BAC56E00A1AAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */,
+				85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.0.9.dylib in Frameworks */,
+				85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.0.9.dylib in Frameworks */,
+				85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.0.9.dylib in Frameworks */,
+				85FC6E3225BACF1000A1AAF4 /* libjxl_threads.0.2.0.dylib in Frameworks */,
+				85FC6E3325BACF1900A1AAF4 /* libjxl.0.2.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -156,6 +225,7 @@
 				8573555F25B56054005FF7C2 /* JXLook */,
 				8573557425B56055005FF7C2 /* JXLookTests */,
 				8573557F25B56055005FF7C2 /* JXLookUITests */,
+				85FC6DCB25BAC56E00A1AAF4 /* JXQuickLook */,
 				8573555E25B56054005FF7C2 /* Products */,
 				8573563025B57300005FF7C2 /* Frameworks */,
 			);
@@ -167,6 +237,7 @@
 				8573555D25B56054005FF7C2 /* JXLook.app */,
 				8573557125B56055005FF7C2 /* JXLookTests.xctest */,
 				8573557C25B56055005FF7C2 /* JXLookUITests.xctest */,
+				85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +245,7 @@
 		8573555F25B56054005FF7C2 /* JXLook */ = {
 			isa = PBXGroup;
 			children = (
+				85FC6E4F25BAD03500A1AAF4 /* JXL.swift */,
 				8573556025B56054005FF7C2 /* AppDelegate.swift */,
 				8573556225B56054005FF7C2 /* ViewController.swift */,
 				8598D00E25B805AE00C08958 /* CenterClipView.swift */,
@@ -313,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				8573564725B5D4E2005FF7C2 /* libc++.tbd */,
+				85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -329,6 +402,18 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		85FC6DCB25BAC56E00A1AAF4 /* JXQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */,
+				85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */,
+				85FC6DD125BAC56E00A1AAF4 /* Info.plist */,
+				85FC6DD225BAC56E00A1AAF4 /* JXQuickLook.entitlements */,
+				85FC6E4725BAD00000A1AAF4 /* JXQuickLook-Bridging-Header.h */,
+			);
+			path = JXQuickLook;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,10 +426,12 @@
 				8573555B25B56054005FF7C2 /* Resources */,
 				8573560925B56B22005FF7C2 /* Copy Files */,
 				8573566425B5DA2F005FF7C2 /* ShellScript */,
+				85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85FC6DD425BAC56E00A1AAF4 /* PBXTargetDependency */,
 			);
 			name = JXLook;
 			productName = JXLook;
@@ -387,6 +474,25 @@
 			productReference = 8573557C25B56055005FF7C2 /* JXLookUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		85FC6DC725BAC56E00A1AAF4 /* JXQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FC6DD925BAC56E00A1AAF4 /* Build configuration list for PBXNativeTarget "JXQuickLook" */;
+			buildPhases = (
+				85FC6DC425BAC56E00A1AAF4 /* Sources */,
+				85FC6DC525BAC56E00A1AAF4 /* Frameworks */,
+				85FC6DC625BAC56E00A1AAF4 /* Resources */,
+				85FC6E3425BACF6D00A1AAF4 /* CopyFiles */,
+				85FC6E4425BACF8E00A1AAF4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXQuickLook;
+			productName = JXQuickLook;
+			productReference = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -408,6 +514,10 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 8573555C25B56054005FF7C2;
 					};
+					85FC6DC725BAC56E00A1AAF4 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
 				};
 			};
 			buildConfigurationList = 8573555825B56054005FF7C2 /* Build configuration list for PBXProject "JXLook" */;
@@ -426,6 +536,7 @@
 				8573555C25B56054005FF7C2 /* JXLook */,
 				8573557025B56055005FF7C2 /* JXLookTests */,
 				8573557B25B56055005FF7C2 /* JXLookUITests */,
+				85FC6DC725BAC56E00A1AAF4 /* JXQuickLook */,
 			);
 		};
 /* End PBXProject section */
@@ -454,6 +565,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85FC6DC625BAC56E00A1AAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -472,7 +591,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n    done\n}\n\nchange_paths $app\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin\ndone\n";
+			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\nchange_paths $app\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin\ndone\n";
+		};
+		85FC6E4425BACF8E00A1AAF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\nchange_paths $app\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -481,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FC6E5025BAD03500A1AAF4 /* JXL.swift in Sources */,
 				8573556325B56054005FF7C2 /* ViewController.swift in Sources */,
 				8573556125B56054005FF7C2 /* AppDelegate.swift in Sources */,
 				8573556525B56054005FF7C2 /* Document.swift in Sources */,
@@ -504,6 +641,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85FC6DC425BAC56E00A1AAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */,
+				85FC6E5125BAD03500A1AAF4 /* JXL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -517,6 +663,11 @@
 			target = 8573555C25B56054005FF7C2 /* JXLook */;
 			targetProxy = 8573557D25B56055005FF7C2 /* PBXContainerItemProxy */;
 		};
+		85FC6DD425BAC56E00A1AAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FC6DC725BAC56E00A1AAF4 /* JXQuickLook */;
+			targetProxy = 85FC6DD325BAC56E00A1AAF4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -526,6 +677,14 @@
 				8573556925B56055005FF7C2 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FC6DCF25BAC56E00A1AAF4 /* Base */,
+			);
+			name = PreviewViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -649,6 +808,7 @@
 		8573558625B56055005FF7C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -656,7 +816,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 684BC2EL26;
+				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
@@ -672,6 +832,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JXLook/JXLook-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -681,6 +842,7 @@
 		8573558725B56055005FF7C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -688,7 +850,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 684BC2EL26;
+				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
@@ -704,6 +866,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JXLook/JXLook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -793,6 +956,63 @@
 			};
 			name = Release;
 		};
+		85FC6DD725BAC56E00A1AAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = JXQuickLook/JXQuickLook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8M6R7T8R8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				INFOPLIST_FILE = JXQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jpeg-xl/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook.JXQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JXQuickLook/JXQuickLook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		85FC6DD825BAC56E00A1AAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = JXQuickLook/JXQuickLook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8M6R7T8R8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				INFOPLIST_FILE = JXQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jpeg-xl/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook.JXQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JXQuickLook/JXQuickLook-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -828,6 +1048,15 @@
 			buildConfigurations = (
 				8573558C25B56055005FF7C2 /* Debug */,
 				8573558D25B56055005FF7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FC6DD925BAC56E00A1AAF4 /* Build configuration list for PBXNativeTarget "JXQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FC6DD725BAC56E00A1AAF4 /* Debug */,
+				85FC6DD825BAC56E00A1AAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
