@@ -18,25 +18,25 @@
 		8573565925B5D743005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; };
 		8573565E25B5D774005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573567525B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; };
-		8573567625B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; };
-		8573567725B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; };
-		8573567825B5DF73005FF7C2 /* libbrotlicommon.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573567925B5DF73005FF7C2 /* libbrotlidec.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573567A25B5DF73005FF7C2 /* libbrotlienc.1.0.9.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573567525B5DF69005FF7C2 /* libbrotlidec.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; };
+		8573567625B5DF69005FF7C2 /* libbrotlienc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; };
+		8573567725B5DF69005FF7C2 /* libbrotlicommon.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; };
+		8573567825B5DF73005FF7C2 /* libbrotlicommon.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573567925B5DF73005FF7C2 /* libbrotlidec.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8573567A25B5DF73005FF7C2 /* libbrotlienc.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598D00E25B805AE00C08958 /* CenterClipView.swift */; };
 		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
 		85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */; };
 		85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; };
-		85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; };
-		85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; };
+		85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; };
+		85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; };
+		85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; };
 		85FC6E3225BACF1000A1AAF4 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
 		85FC6E3325BACF1900A1AAF4 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; };
-		85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.0.9.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.0.9.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.0.9.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		85FC6E3E25BACF8300A1AAF4 /* libjxl_threads.0.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		85FC6E4125BACF8800A1AAF4 /* libjxl.0.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		85FC6E5025BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
@@ -74,9 +74,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8573567825B5DF73005FF7C2 /* libbrotlicommon.1.0.9.dylib in Copy Files */,
-				8573567925B5DF73005FF7C2 /* libbrotlidec.1.0.9.dylib in Copy Files */,
-				8573567A25B5DF73005FF7C2 /* libbrotlienc.1.0.9.dylib in Copy Files */,
+				8573567825B5DF73005FF7C2 /* libbrotlicommon.1.dylib in Copy Files */,
+				8573567925B5DF73005FF7C2 /* libbrotlidec.1.dylib in Copy Files */,
+				8573567A25B5DF73005FF7C2 /* libbrotlienc.1.dylib in Copy Files */,
 				8573565E25B5D774005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */,
 				8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */,
 			);
@@ -100,9 +100,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.0.9.dylib in CopyFiles */,
-				85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.0.9.dylib in CopyFiles */,
-				85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.0.9.dylib in CopyFiles */,
+				85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.dylib in CopyFiles */,
+				85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.dylib in CopyFiles */,
+				85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.dylib in CopyFiles */,
 				85FC6E3E25BACF8300A1AAF4 /* libjxl_threads.0.2.0.dylib in CopyFiles */,
 				85FC6E4125BACF8800A1AAF4 /* libjxl.0.2.0.dylib in CopyFiles */,
 			);
@@ -161,9 +161,9 @@
 		8573564725B5D4E2005FF7C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.2.0.dylib; sourceTree = "<group>"; };
 		8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.2.0.dylib; sourceTree = "<group>"; };
-		8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlidec.1.0.9.dylib; sourceTree = "<group>"; };
-		8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlienc.1.0.9.dylib; sourceTree = "<group>"; };
-		8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlicommon.1.0.9.dylib; sourceTree = "<group>"; };
+		8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlidec.1.dylib; sourceTree = "<group>"; };
+		8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlienc.1.dylib; sourceTree = "<group>"; };
+		8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlicommon.1.dylib; sourceTree = "<group>"; };
 		8598D00E25B805AE00C08958 /* CenterClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
 		85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
@@ -180,11 +180,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8573567725B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib in Frameworks */,
-				8573567525B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib in Frameworks */,
+				8573567725B5DF69005FF7C2 /* libbrotlicommon.1.dylib in Frameworks */,
+				8573567525B5DF69005FF7C2 /* libbrotlidec.1.dylib in Frameworks */,
 				8573565625B5D743005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
 				8573565925B5D743005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
-				8573567625B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib in Frameworks */,
+				8573567625B5DF69005FF7C2 /* libbrotlienc.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */,
-				85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.0.9.dylib in Frameworks */,
-				85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.0.9.dylib in Frameworks */,
-				85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.0.9.dylib in Frameworks */,
+				85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.dylib in Frameworks */,
+				85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.dylib in Frameworks */,
+				85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.dylib in Frameworks */,
 				85FC6E3225BACF1000A1AAF4 /* libjxl_threads.0.2.0.dylib in Frameworks */,
 				85FC6E3325BACF1900A1AAF4 /* libjxl.0.2.0.dylib in Frameworks */,
 			);
@@ -393,9 +393,9 @@
 		8573564F25B5D742005FF7C2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				8573567425B5DF69005FF7C2 /* libbrotlicommon.1.0.9.dylib */,
-				8573567225B5DF69005FF7C2 /* libbrotlidec.1.0.9.dylib */,
-				8573567325B5DF69005FF7C2 /* libbrotlienc.1.0.9.dylib */,
+				8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */,
+				8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */,
+				8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */,
 				8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */,
 				8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */,
 			);
