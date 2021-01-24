@@ -12,6 +12,7 @@ struct JXL {
     static func parse(data: Data) throws -> NSImage? {
         var image: NSImage? = nil
         var buffer: UnsafeMutableBufferPointer<UInt8> = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: 1)
+        var icc: UnsafeMutableBufferPointer<UInt8>? = nil
         
         let isValid = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
             if let ptr = bytes.bindMemory(to: UInt8.self).baseAddress {
@@ -30,7 +31,7 @@ struct JXL {
             Swift.print("Cannot set runner")
         }
         
-        JxlDecoderSubscribeEvents(decoder, Int32(JXL_DEC_BASIC_INFO.rawValue | JXL_DEC_FULL_IMAGE.rawValue))
+        JxlDecoderSubscribeEvents(decoder, Int32(JXL_DEC_BASIC_INFO.rawValue | JXL_DEC_COLOR_ENCODING.rawValue | JXL_DEC_FULL_IMAGE.rawValue))
         
         let _ = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
             var nextIn = bytes.bindMemory(to: UInt8.self).baseAddress
@@ -39,6 +40,9 @@ struct JXL {
             defer {
                 infoPtr.deallocate()
             }
+            
+            var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
+            
             parsingLoop: while true {
                 let result = JxlDecoderProcessInput(decoder, &nextIn, &available)
                 
@@ -51,9 +55,21 @@ struct JXL {
                     Swift.print("basic info: \(infoPtr.pointee)")
                 case JXL_DEC_SUCCESS:
                     return true
+                case JXL_DEC_COLOR_ENCODING:
+                    var iccSize: size_t = 0
+                    if JxlDecoderGetICCProfileSize(decoder, &format, JXL_COLOR_PROFILE_TARGET_DATA, &iccSize) != JXL_DEC_SUCCESS {
+                        Swift.print("Cannot get ICC size")
+                    }
+                    icc?.deallocate() 
+                    icc = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: iccSize)
+                    if JxlDecoderGetColorAsICCProfile(decoder, &format, JXL_COLOR_PROFILE_TARGET_DATA, icc!.baseAddress, iccSize) != JXL_DEC_SUCCESS {
+                        Swift.print("Cannot get ICC")
+                    }
+                    
                 case JXL_DEC_FULL_IMAGE:
                     let info = infoPtr.pointee
-                    if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32) {
+                    let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .sRGB
+                    if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32)?.retagging(with: colorSpace) {
                         imageRep.size = CGSize(width: Int(info.xsize) / 2, height: Int(info.ysize) / 2)
                         if let pixels = imageRep.bitmapData {
                             memmove(pixels, buffer.baseAddress, buffer.count)
@@ -64,7 +80,6 @@ struct JXL {
                     }
                     
                 case JXL_DEC_NEED_IMAGE_OUT_BUFFER:
-                    var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
                     var outputBufferSize: Int = 0
                     if JxlDecoderImageOutBufferSize(decoder, &format, &outputBufferSize) != JXL_DEC_SUCCESS {
                         Swift.print("cannot get size")
@@ -85,6 +100,7 @@ struct JXL {
             }
             return false
         }
+        icc?.deallocate()
         buffer.deallocate()
         JxlThreadParallelRunnerDestroy(runner)
         JxlDecoderDestroy(decoder)
