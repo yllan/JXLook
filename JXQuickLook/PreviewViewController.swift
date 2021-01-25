@@ -36,10 +36,9 @@ class PreviewViewController: NSViewController, QLPreviewingController {
         
         // Perform any setup necessary in order to prepare the view.
         if let img = try? JXL.parse(data: Data(contentsOf: url)) {
-            
             imageView.image = img
         } else {
-            // error
+            handler(JXLError.cannotDecode)
         }
         handler(nil)
     }

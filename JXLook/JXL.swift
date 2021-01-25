@@ -8,6 +8,10 @@
 import Foundation
 import Cocoa
 
+enum JXLError: Error {
+    case cannotDecode
+}
+
 struct JXL {
     static func parse(data: Data) throws -> NSImage? {
         var image: NSImage? = nil
