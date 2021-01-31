@@ -15,10 +15,22 @@
 		8573557625B56055005FF7C2 /* JXLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573557525B56055005FF7C2 /* JXLookTests.swift */; };
 		8573558125B56055005FF7C2 /* JXLookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573558025B56055005FF7C2 /* JXLookUITests.swift */; };
 		8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598D00E25B805AE00C08958 /* CenterClipView.swift */; };
-		859C07DD25C6471100BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059A25C645F400BAFE90 /* libjxl_threads.0.3.0.dylib */; };
-		859C07DE25C6471100BAFE90 /* libjxl.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059225C645F400BAFE90 /* libjxl.0.3.0.dylib */; };
-		859C07E125C6472F00BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059A25C645F400BAFE90 /* libjxl_threads.0.3.0.dylib */; };
-		859C07E225C6472F00BAFE90 /* libjxl.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059225C645F400BAFE90 /* libjxl.0.3.0.dylib */; };
+		859C08F025C655E400BAFE90 /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059C25C645F400BAFE90 /* libjxl_threads.a */; };
+		859C08F125C655E400BAFE90 /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059625C645F400BAFE90 /* libjxl.a */; };
+		859C08F625C6561100BAFE90 /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C058C25C645F400BAFE90 /* libhwy.a */; };
+		859C08FB25C6563100BAFE90 /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C05A625C645F400BAFE90 /* libskcms.a */; };
+		859C090425C6564F00BAFE90 /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C057625C645F400BAFE90 /* libbrotlicommon-static.a */; };
+		859C090525C6564F00BAFE90 /* libbrotlidec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C057A25C645F400BAFE90 /* libbrotlidec-static.a */; };
+		859C090625C6564F00BAFE90 /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C057E25C645F400BAFE90 /* libbrotlienc-static.a */; };
+		859C090A25C6566400BAFE90 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C090925C6566400BAFE90 /* libc++.1.tbd */; };
+		859C090D25C656D500BAFE90 /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C057625C645F400BAFE90 /* libbrotlicommon-static.a */; };
+		859C090E25C656D500BAFE90 /* libbrotlidec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C057A25C645F400BAFE90 /* libbrotlidec-static.a */; };
+		859C090F25C656D500BAFE90 /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C057E25C645F400BAFE90 /* libbrotlienc-static.a */; };
+		859C091025C656D500BAFE90 /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C058C25C645F400BAFE90 /* libhwy.a */; };
+		859C091125C656D500BAFE90 /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059C25C645F400BAFE90 /* libjxl_threads.a */; };
+		859C091225C656D500BAFE90 /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059625C645F400BAFE90 /* libjxl.a */; };
+		859C091325C656D500BAFE90 /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C05A625C645F400BAFE90 /* libskcms.a */; };
+		859C091425C656DE00BAFE90 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573564725B5D4E2005FF7C2 /* libc++.tbd */; };
 		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
 		85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */; };
@@ -196,12 +208,54 @@
 			remoteGlobalIDString = A1D9563247804A1D9D6BD313;
 			remoteInfo = skcms;
 		};
-		859C07D925C646D100BAFE90 /* PBXContainerItemProxy */ = {
+		859C08EC25C655CC00BAFE90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = FFACCFFA0FFC4AC39EA7F3DF;
-			remoteInfo = jxl;
+			remoteGlobalIDString = FE4A7DF825C443A8A1E4777C;
+			remoteInfo = "jxl-static";
+		};
+		859C08EE25C655CC00BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A151973A8CAF43BFAC77C6CC;
+			remoteInfo = "jxl_threads-static";
+		};
+		859C08F425C6560900BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EDF44AAB0004401B73E745D;
+			remoteInfo = hwy;
+		};
+		859C08F925C6562C00BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA0191253EAF42FC90EAD412;
+			remoteInfo = skcms;
+		};
+		859C08FE25C6564200BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB29F7913F1644E1A4FA4963;
+			remoteInfo = "brotlicommon-static";
+		};
+		859C090025C6564200BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F745009A255640A995EE10DB;
+			remoteInfo = "brotlidec-static";
+		};
+		859C090225C6564200BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 10AE5D7483AC44CB9B69FBB4;
+			remoteInfo = "brotlienc-static";
 		};
 		85FC6DD325BAC56E00A1AAF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -213,16 +267,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8573560925B56B22005FF7C2 /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,15 +276,6 @@
 				85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85FC6E3425BACF6D00A1AAF4 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -264,6 +299,7 @@
 		8573564725B5D4E2005FF7C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8598D00E25B805AE00C08958 /* CenterClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
 		859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPEGXL.xcodeproj; path = "jpeg-xl/xcode/JPEGXL.xcodeproj"; sourceTree = "<group>"; };
+		859C090925C6566400BAFE90 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -279,8 +315,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859C07E125C6472F00BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */,
-				859C07E225C6472F00BAFE90 /* libjxl.0.3.0.dylib in Frameworks */,
+				859C091425C656DE00BAFE90 /* libc++.tbd in Frameworks */,
+				859C090D25C656D500BAFE90 /* libbrotlicommon-static.a in Frameworks */,
+				859C090E25C656D500BAFE90 /* libbrotlidec-static.a in Frameworks */,
+				859C090F25C656D500BAFE90 /* libbrotlienc-static.a in Frameworks */,
+				859C091025C656D500BAFE90 /* libhwy.a in Frameworks */,
+				859C091125C656D500BAFE90 /* libjxl_threads.a in Frameworks */,
+				859C091225C656D500BAFE90 /* libjxl.a in Frameworks */,
+				859C091325C656D500BAFE90 /* libskcms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +344,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859C07DD25C6471100BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */,
-				859C07DE25C6471100BAFE90 /* libjxl.0.3.0.dylib in Frameworks */,
+				859C090A25C6566400BAFE90 /* libc++.1.tbd in Frameworks */,
+				859C090425C6564F00BAFE90 /* libbrotlicommon-static.a in Frameworks */,
+				859C090525C6564F00BAFE90 /* libbrotlidec-static.a in Frameworks */,
+				859C090625C6564F00BAFE90 /* libbrotlienc-static.a in Frameworks */,
+				859C08FB25C6563100BAFE90 /* libskcms.a in Frameworks */,
+				859C08F625C6561100BAFE90 /* libhwy.a in Frameworks */,
+				859C08F025C655E400BAFE90 /* libjxl_threads.a in Frameworks */,
+				859C08F125C655E400BAFE90 /* libjxl.a in Frameworks */,
 				85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +421,7 @@
 		8573563025B57300005FF7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				859C090925C6566400BAFE90 /* libc++.1.tbd */,
 				8573564725B5D4E2005FF7C2 /* libc++.tbd */,
 				85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */,
 			);
@@ -431,8 +480,6 @@
 				8573555925B56054005FF7C2 /* Sources */,
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
-				8573560925B56B22005FF7C2 /* Copy Files */,
-				8573566425B5DA2F005FF7C2 /* ShellScript */,
 				85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -488,13 +535,17 @@
 				85FC6DC425BAC56E00A1AAF4 /* Sources */,
 				85FC6DC525BAC56E00A1AAF4 /* Frameworks */,
 				85FC6DC625BAC56E00A1AAF4 /* Resources */,
-				85FC6E3425BACF6D00A1AAF4 /* CopyFiles */,
-				85FC6E4425BACF8E00A1AAF4 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				859C07DA25C646D100BAFE90 /* PBXTargetDependency */,
+				859C08FF25C6564200BAFE90 /* PBXTargetDependency */,
+				859C090125C6564200BAFE90 /* PBXTargetDependency */,
+				859C090325C6564200BAFE90 /* PBXTargetDependency */,
+				859C08FA25C6562C00BAFE90 /* PBXTargetDependency */,
+				859C08F525C6560900BAFE90 /* PBXTargetDependency */,
+				859C08ED25C655CC00BAFE90 /* PBXTargetDependency */,
+				859C08EF25C655CC00BAFE90 /* PBXTargetDependency */,
 			);
 			name = JXQuickLook;
 			productName = JXQuickLook;
@@ -747,40 +798,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8573566425B5DA2F005FF7C2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\n#change_paths $app\n#for dyl_bin in ${app_dyl_list[*]}; do\n#    change_paths $fw_path/$dyl_bin\n#done\n";
-		};
-		85FC6E4425BACF8E00A1AAF4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\n#change_paths $app\n#for dyl_bin in ${app_dyl_list[*]}; do\n#    change_paths $fw_path/$dyl_bin\n#done\n";
-		};
 		85FC6E5E25BB25AA00A1AAF4 /* Increment Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,10 +869,40 @@
 			target = 8573555C25B56054005FF7C2 /* JXLook */;
 			targetProxy = 8573557D25B56055005FF7C2 /* PBXContainerItemProxy */;
 		};
-		859C07DA25C646D100BAFE90 /* PBXTargetDependency */ = {
+		859C08ED25C655CC00BAFE90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = jxl;
-			targetProxy = 859C07D925C646D100BAFE90 /* PBXContainerItemProxy */;
+			name = "jxl-static";
+			targetProxy = 859C08EC25C655CC00BAFE90 /* PBXContainerItemProxy */;
+		};
+		859C08EF25C655CC00BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "jxl_threads-static";
+			targetProxy = 859C08EE25C655CC00BAFE90 /* PBXContainerItemProxy */;
+		};
+		859C08F525C6560900BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hwy;
+			targetProxy = 859C08F425C6560900BAFE90 /* PBXContainerItemProxy */;
+		};
+		859C08FA25C6562C00BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = skcms;
+			targetProxy = 859C08F925C6562C00BAFE90 /* PBXContainerItemProxy */;
+		};
+		859C08FF25C6564200BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "brotlicommon-static";
+			targetProxy = 859C08FE25C6564200BAFE90 /* PBXContainerItemProxy */;
+		};
+		859C090125C6564200BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "brotlidec-static";
+			targetProxy = 859C090025C6564200BAFE90 /* PBXContainerItemProxy */;
+		};
+		859C090325C6564200BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "brotlienc-static";
+			targetProxy = 859C090225C6564200BAFE90 /* PBXContainerItemProxy */;
 		};
 		85FC6DD425BAC56E00A1AAF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
