@@ -38,8 +38,7 @@ struct JXL {
         JxlDecoderSubscribeEvents(decoder, Int32(JXL_DEC_BASIC_INFO.rawValue | JXL_DEC_COLOR_ENCODING.rawValue | JXL_DEC_FULL_IMAGE.rawValue))
         
         let _ = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
-            var nextIn = bytes.bindMemory(to: UInt8.self).baseAddress
-            var available: Int = data.count
+            let nextIn = bytes.bindMemory(to: UInt8.self).baseAddress
             let infoPtr = UnsafeMutablePointer<JxlBasicInfo>.allocate(capacity: 1)
             defer {
                 infoPtr.deallocate()
@@ -47,8 +46,10 @@ struct JXL {
             
             var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
             
+            JxlDecoderSetInput(decoder, nextIn, bytes.count)
+            
             parsingLoop: while true {
-                let result = JxlDecoderProcessInput(decoder, &nextIn, &available)
+                let result = JxlDecoderProcessInput(decoder)
                 
                 switch result {
                 case JXL_DEC_BASIC_INFO:

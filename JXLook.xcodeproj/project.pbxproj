@@ -14,31 +14,15 @@
 		8573556A25B56055005FF7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8573556825B56055005FF7C2 /* Main.storyboard */; };
 		8573557625B56055005FF7C2 /* JXLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573557525B56055005FF7C2 /* JXLookTests.swift */; };
 		8573558125B56055005FF7C2 /* JXLookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573558025B56055005FF7C2 /* JXLookUITests.swift */; };
-		8573565625B5D743005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
-		8573565925B5D743005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; };
-		8573565E25B5D774005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573567525B5DF69005FF7C2 /* libbrotlidec.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; };
-		8573567625B5DF69005FF7C2 /* libbrotlienc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; };
-		8573567725B5DF69005FF7C2 /* libbrotlicommon.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; };
-		8573567825B5DF73005FF7C2 /* libbrotlicommon.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573567925B5DF73005FF7C2 /* libbrotlidec.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		8573567A25B5DF73005FF7C2 /* libbrotlienc.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598D00E25B805AE00C08958 /* CenterClipView.swift */; };
+		859C07DD25C6471100BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059A25C645F400BAFE90 /* libjxl_threads.0.3.0.dylib */; };
+		859C07DE25C6471100BAFE90 /* libjxl.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059225C645F400BAFE90 /* libjxl.0.3.0.dylib */; };
+		859C07E125C6472F00BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059A25C645F400BAFE90 /* libjxl_threads.0.3.0.dylib */; };
+		859C07E225C6472F00BAFE90 /* libjxl.0.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059225C645F400BAFE90 /* libjxl.0.3.0.dylib */; };
 		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
 		85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */; };
 		85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; };
-		85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; };
-		85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; };
-		85FC6E3225BACF1000A1AAF4 /* libjxl_threads.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; };
-		85FC6E3325BACF1900A1AAF4 /* libjxl.0.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; };
-		85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		85FC6E3E25BACF8300A1AAF4 /* libjxl_threads.0.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		85FC6E4125BACF8800A1AAF4 /* libjxl.0.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		85FC6E5025BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 		85FC6E5125BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +42,167 @@
 			remoteGlobalIDString = 8573555C25B56054005FF7C2;
 			remoteInfo = JXLook;
 		};
+		859C056F25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C0092276A0549239F7A7AA7;
+			remoteInfo = box;
+		};
+		859C057125C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4D1D07B0D2F49CF85F21902;
+			remoteInfo = brotli;
+		};
+		859C057325C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98486B54E6794AC5A5D6EE1A;
+			remoteInfo = brotlicommon;
+		};
+		859C057525C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CA96651007C4A07A3B1AB7D;
+			remoteInfo = "brotlicommon-static";
+		};
+		859C057725C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 774854F9EC524146B95B31B3;
+			remoteInfo = brotlidec;
+		};
+		859C057925C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC9767DF94634FFD9DB62099;
+			remoteInfo = "brotlidec-static";
+		};
+		859C057B25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40E892CA17A84FF6A54264F6;
+			remoteInfo = brotlienc;
+		};
+		859C057D25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 562B44AA986F44A9BCDF98CA;
+			remoteInfo = "brotlienc-static";
+		};
+		859C057F25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 146A14527E9243BB89F71591;
+			remoteInfo = cjxl;
+		};
+		859C058125C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC055A58397F477E96C3CA0D;
+			remoteInfo = cjxltool;
+		};
+		859C058525C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30600D592C6540A1AF190A9F;
+			remoteInfo = djxl;
+		};
+		859C058725C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BDC793679784488B2299032;
+			remoteInfo = djxltool;
+		};
+		859C058B25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AD55EC1FC5CC468486191807;
+			remoteInfo = hwy;
+		};
+		859C058F25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD711C296518461189044D3A;
+			remoteInfo = hwy_list_targets;
+		};
+		859C059125C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCA9BFEE821B4FAA887DAD4E;
+			remoteInfo = jxl;
+		};
+		859C059325C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4AE849AC218418F8244D766;
+			remoteInfo = "jxl-obj";
+		};
+		859C059525C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A2EF823B249423D870931BE;
+			remoteInfo = "jxl-static";
+		};
+		859C059725C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58F886D9498340F4A830B26E;
+			remoteInfo = "jxl_extras-static";
+		};
+		859C059925C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53E0C32A5F2142F0848FD9DA;
+			remoteInfo = jxl_threads;
+		};
+		859C059B25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95124A4897E24D118DC0544B;
+			remoteInfo = "jxl_threads-static";
+		};
+		859C059D25C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3EA21929787B4C12BB580966;
+			remoteInfo = jxl_tool;
+		};
+		859C05A525C645F400BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1D9563247804A1D9D6BD313;
+			remoteInfo = skcms;
+		};
+		859C07D925C646D100BAFE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FFACCFFA0FFC4AC39EA7F3DF;
+			remoteInfo = jxl;
+		};
 		85FC6DD325BAC56E00A1AAF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8573555525B56054005FF7C2 /* Project object */;
@@ -74,11 +219,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8573567825B5DF73005FF7C2 /* libbrotlicommon.1.dylib in Copy Files */,
-				8573567925B5DF73005FF7C2 /* libbrotlidec.1.dylib in Copy Files */,
-				8573567A25B5DF73005FF7C2 /* libbrotlienc.1.dylib in Copy Files */,
-				8573565E25B5D774005FF7C2 /* libjxl_threads.0.2.0.dylib in Copy Files */,
-				8573565F25B5D774005FF7C2 /* libjxl.0.2.0.dylib in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,11 +240,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				85FC6E3525BACF7800A1AAF4 /* libbrotlicommon.1.dylib in CopyFiles */,
-				85FC6E3825BACF7B00A1AAF4 /* libbrotlidec.1.dylib in CopyFiles */,
-				85FC6E3B25BACF7F00A1AAF4 /* libbrotlienc.1.dylib in CopyFiles */,
-				85FC6E3E25BACF8300A1AAF4 /* libjxl_threads.0.2.0.dylib in CopyFiles */,
-				85FC6E4125BACF8800A1AAF4 /* libjxl.0.2.0.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,46 +260,10 @@
 		8573557C25B56055005FF7C2 /* JXLookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXLookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8573558025B56055005FF7C2 /* JXLookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXLookUITests.swift; sourceTree = "<group>"; };
 		8573558225B56055005FF7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8573559625B56132005FF7C2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8573559F25B56132005FF7C2 /* highway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highway.h; sourceTree = "<group>"; };
-		857355A025B56132005FF7C2 /* nanobenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanobenchmark.h; sourceTree = "<group>"; };
-		857355A225B56132005FF7C2 /* test_util-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test_util-inl.h"; sourceTree = "<group>"; };
-		857355A325B56132005FF7C2 /* aligned_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aligned_allocator.h; sourceTree = "<group>"; };
-		857355A425B56132005FF7C2 /* cache_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache_control.h; sourceTree = "<group>"; };
-		857355A625B56132005FF7C2 /* x86_256-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86_256-inl.h"; sourceTree = "<group>"; };
-		857355A725B56132005FF7C2 /* shared-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shared-inl.h"; sourceTree = "<group>"; };
-		857355A825B56132005FF7C2 /* x86_128-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86_128-inl.h"; sourceTree = "<group>"; };
-		857355A925B56132005FF7C2 /* arm_neon-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "arm_neon-inl.h"; sourceTree = "<group>"; };
-		857355AA25B56132005FF7C2 /* wasm_128-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wasm_128-inl.h"; sourceTree = "<group>"; };
-		857355AB25B56132005FF7C2 /* x86_512-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86_512-inl.h"; sourceTree = "<group>"; };
-		857355AC25B56132005FF7C2 /* scalar-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "scalar-inl.h"; sourceTree = "<group>"; };
-		857355AD25B56132005FF7C2 /* set_macros-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "set_macros-inl.h"; sourceTree = "<group>"; };
-		857355AE25B56132005FF7C2 /* foreach_target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foreach_target.h; sourceTree = "<group>"; };
-		857355AF25B56132005FF7C2 /* targets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targets.h; sourceTree = "<group>"; };
-		857355B025B56132005FF7C2 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
-		857355B225B56132005FF7C2 /* color_encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color_encoding.h; sourceTree = "<group>"; };
-		857355B325B56132005FF7C2 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
-		857355B425B56132005FF7C2 /* parallel_runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_runner.h; sourceTree = "<group>"; };
-		857355B525B56132005FF7C2 /* jxl_threads_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jxl_threads_export.h; sourceTree = "<group>"; };
-		857355B625B56132005FF7C2 /* memory_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_manager.h; sourceTree = "<group>"; };
-		857355B725B56132005FF7C2 /* encode_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode_cxx.h; sourceTree = "<group>"; };
-		857355B825B56132005FF7C2 /* codestream_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codestream_header.h; sourceTree = "<group>"; };
-		857355B925B56132005FF7C2 /* jxl_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jxl_export.h; sourceTree = "<group>"; };
-		857355BA25B56132005FF7C2 /* thread_parallel_runner_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_parallel_runner_cxx.h; sourceTree = "<group>"; };
-		857355BB25B56132005FF7C2 /* thread_parallel_runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_parallel_runner.h; sourceTree = "<group>"; };
-		857355BC25B56132005FF7C2 /* decode_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_cxx.h; sourceTree = "<group>"; };
-		857355BD25B56132005FF7C2 /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
-		857355BE25B56132005FF7C2 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
-		857355C125B56132005FF7C2 /* math-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "math-inl.h"; sourceTree = "<group>"; };
-		857355C325B56132005FF7C2 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
 		857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXLook-Bridging-Header.h"; sourceTree = "<group>"; };
 		8573564725B5D4E2005FF7C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl_threads.0.2.0.dylib; sourceTree = "<group>"; };
-		8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjxl.0.2.0.dylib; sourceTree = "<group>"; };
-		8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlidec.1.dylib; sourceTree = "<group>"; };
-		8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlienc.1.dylib; sourceTree = "<group>"; };
-		8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libbrotlicommon.1.dylib; sourceTree = "<group>"; };
 		8598D00E25B805AE00C08958 /* CenterClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
+		859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPEGXL.xcodeproj; path = "jpeg-xl/xcode/JPEGXL.xcodeproj"; sourceTree = "<group>"; };
 		85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -180,11 +279,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8573567725B5DF69005FF7C2 /* libbrotlicommon.1.dylib in Frameworks */,
-				8573567525B5DF69005FF7C2 /* libbrotlidec.1.dylib in Frameworks */,
-				8573565625B5D743005FF7C2 /* libjxl_threads.0.2.0.dylib in Frameworks */,
-				8573565925B5D743005FF7C2 /* libjxl.0.2.0.dylib in Frameworks */,
-				8573567625B5DF69005FF7C2 /* libbrotlienc.1.dylib in Frameworks */,
+				859C07E125C6472F00BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */,
+				859C07E225C6472F00BAFE90 /* libjxl.0.3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,12 +302,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859C07DD25C6471100BAFE90 /* libjxl_threads.0.3.0.dylib in Frameworks */,
+				859C07DE25C6471100BAFE90 /* libjxl.0.3.0.dylib in Frameworks */,
 				85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */,
-				85FC6E2925BACF0500A1AAF4 /* libbrotlicommon.1.dylib in Frameworks */,
-				85FC6E2D25BACF0800A1AAF4 /* libbrotlidec.1.dylib in Frameworks */,
-				85FC6E3125BACF0B00A1AAF4 /* libbrotlienc.1.dylib in Frameworks */,
-				85FC6E3225BACF1000A1AAF4 /* libjxl_threads.0.2.0.dylib in Frameworks */,
-				85FC6E3325BACF1900A1AAF4 /* libjxl.0.2.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +314,7 @@
 		8573555425B56054005FF7C2 = {
 			isa = PBXGroup;
 			children = (
-				8573559425B56132005FF7C2 /* jpeg-xl */,
+				859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */,
 				8573555F25B56054005FF7C2 /* JXLook */,
 				8573557425B56055005FF7C2 /* JXLookTests */,
 				8573557F25B56055005FF7C2 /* JXLookUITests */,
@@ -277,110 +370,6 @@
 			path = JXLookUITests;
 			sourceTree = "<group>";
 		};
-		8573559425B56132005FF7C2 /* jpeg-xl */ = {
-			isa = PBXGroup;
-			children = (
-				8573559625B56132005FF7C2 /* LICENSE */,
-				8573559D25B56132005FF7C2 /* include */,
-				8573564F25B5D742005FF7C2 /* lib */,
-			);
-			path = "jpeg-xl";
-			sourceTree = "<group>";
-		};
-		8573559D25B56132005FF7C2 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				8573559E25B56132005FF7C2 /* hwy */,
-				857355B125B56132005FF7C2 /* jxl */,
-				857355BF25B56132005FF7C2 /* contrib */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		8573559E25B56132005FF7C2 /* hwy */ = {
-			isa = PBXGroup;
-			children = (
-				8573559F25B56132005FF7C2 /* highway.h */,
-				857355A025B56132005FF7C2 /* nanobenchmark.h */,
-				857355A125B56132005FF7C2 /* tests */,
-				857355A325B56132005FF7C2 /* aligned_allocator.h */,
-				857355A425B56132005FF7C2 /* cache_control.h */,
-				857355A525B56132005FF7C2 /* ops */,
-				857355AE25B56132005FF7C2 /* foreach_target.h */,
-				857355AF25B56132005FF7C2 /* targets.h */,
-				857355B025B56132005FF7C2 /* base.h */,
-			);
-			path = hwy;
-			sourceTree = "<group>";
-		};
-		857355A125B56132005FF7C2 /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				857355A225B56132005FF7C2 /* test_util-inl.h */,
-			);
-			path = tests;
-			sourceTree = "<group>";
-		};
-		857355A525B56132005FF7C2 /* ops */ = {
-			isa = PBXGroup;
-			children = (
-				857355A625B56132005FF7C2 /* x86_256-inl.h */,
-				857355A725B56132005FF7C2 /* shared-inl.h */,
-				857355A825B56132005FF7C2 /* x86_128-inl.h */,
-				857355A925B56132005FF7C2 /* arm_neon-inl.h */,
-				857355AA25B56132005FF7C2 /* wasm_128-inl.h */,
-				857355AB25B56132005FF7C2 /* x86_512-inl.h */,
-				857355AC25B56132005FF7C2 /* scalar-inl.h */,
-				857355AD25B56132005FF7C2 /* set_macros-inl.h */,
-			);
-			path = ops;
-			sourceTree = "<group>";
-		};
-		857355B125B56132005FF7C2 /* jxl */ = {
-			isa = PBXGroup;
-			children = (
-				857355B225B56132005FF7C2 /* color_encoding.h */,
-				857355B325B56132005FF7C2 /* types.h */,
-				857355B425B56132005FF7C2 /* parallel_runner.h */,
-				857355B525B56132005FF7C2 /* jxl_threads_export.h */,
-				857355B625B56132005FF7C2 /* memory_manager.h */,
-				857355B725B56132005FF7C2 /* encode_cxx.h */,
-				857355B825B56132005FF7C2 /* codestream_header.h */,
-				857355B925B56132005FF7C2 /* jxl_export.h */,
-				857355BA25B56132005FF7C2 /* thread_parallel_runner_cxx.h */,
-				857355BB25B56132005FF7C2 /* thread_parallel_runner.h */,
-				857355BC25B56132005FF7C2 /* decode_cxx.h */,
-				857355BD25B56132005FF7C2 /* encode.h */,
-				857355BE25B56132005FF7C2 /* decode.h */,
-			);
-			path = jxl;
-			sourceTree = "<group>";
-		};
-		857355BF25B56132005FF7C2 /* contrib */ = {
-			isa = PBXGroup;
-			children = (
-				857355C025B56132005FF7C2 /* math */,
-				857355C225B56132005FF7C2 /* image */,
-			);
-			path = contrib;
-			sourceTree = "<group>";
-		};
-		857355C025B56132005FF7C2 /* math */ = {
-			isa = PBXGroup;
-			children = (
-				857355C125B56132005FF7C2 /* math-inl.h */,
-			);
-			path = math;
-			sourceTree = "<group>";
-		};
-		857355C225B56132005FF7C2 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				857355C325B56132005FF7C2 /* image.h */,
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
 		8573563025B57300005FF7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,16 +379,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8573564F25B5D742005FF7C2 /* lib */ = {
+		859C054625C645F300BAFE90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8573567425B5DF69005FF7C2 /* libbrotlicommon.1.dylib */,
-				8573567225B5DF69005FF7C2 /* libbrotlidec.1.dylib */,
-				8573567325B5DF69005FF7C2 /* libbrotlienc.1.dylib */,
-				8573565125B5D742005FF7C2 /* libjxl_threads.0.2.0.dylib */,
-				8573565425B5D742005FF7C2 /* libjxl.0.2.0.dylib */,
+				859C057025C645F400BAFE90 /* libbox.a */,
+				859C057225C645F400BAFE90 /* brotli */,
+				859C057425C645F400BAFE90 /* libbrotlicommon.1.0.7.dylib */,
+				859C057625C645F400BAFE90 /* libbrotlicommon-static.a */,
+				859C057825C645F400BAFE90 /* libbrotlidec.1.0.7.dylib */,
+				859C057A25C645F400BAFE90 /* libbrotlidec-static.a */,
+				859C057C25C645F400BAFE90 /* libbrotlienc.1.0.7.dylib */,
+				859C057E25C645F400BAFE90 /* libbrotlienc-static.a */,
+				859C058025C645F400BAFE90 /* cjxl */,
+				859C058225C645F400BAFE90 /* libcjxltool.a */,
+				859C058625C645F400BAFE90 /* djxl */,
+				859C058825C645F400BAFE90 /* libdjxltool.a */,
+				859C058C25C645F400BAFE90 /* libhwy.a */,
+				859C059025C645F400BAFE90 /* hwy_list_targets */,
+				859C059225C645F400BAFE90 /* libjxl.0.3.0.dylib */,
+				859C059425C645F400BAFE90 /* libjxl-obj.a */,
+				859C059625C645F400BAFE90 /* libjxl.a */,
+				859C059825C645F400BAFE90 /* libjxl_extras-static.a */,
+				859C059A25C645F400BAFE90 /* libjxl_threads.0.3.0.dylib */,
+				859C059C25C645F400BAFE90 /* libjxl_threads.a */,
+				859C059E25C645F400BAFE90 /* libjxl_tool.a */,
+				859C05A625C645F400BAFE90 /* libskcms.a */,
 			);
-			path = lib;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		85FC6DCB25BAC56E00A1AAF4 /* JXQuickLook */ = {
@@ -488,6 +494,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				859C07DA25C646D100BAFE90 /* PBXTargetDependency */,
 			);
 			name = JXQuickLook;
 			productName = JXQuickLook;
@@ -532,6 +539,12 @@
 			mainGroup = 8573555425B56054005FF7C2;
 			productRefGroup = 8573555E25B56054005FF7C2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 859C054625C645F300BAFE90 /* Products */;
+					ProjectRef = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8573555C25B56054005FF7C2 /* JXLook */,
@@ -541,6 +554,163 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		859C057025C645F400BAFE90 /* libbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbox.a;
+			remoteRef = 859C056F25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057225C645F400BAFE90 /* brotli */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = brotli;
+			remoteRef = 859C057125C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057425C645F400BAFE90 /* libbrotlicommon.1.0.7.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbrotlicommon.1.0.7.dylib;
+			remoteRef = 859C057325C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057625C645F400BAFE90 /* libbrotlicommon-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbrotlicommon-static.a";
+			remoteRef = 859C057525C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057825C645F400BAFE90 /* libbrotlidec.1.0.7.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbrotlidec.1.0.7.dylib;
+			remoteRef = 859C057725C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057A25C645F400BAFE90 /* libbrotlidec-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbrotlidec-static.a";
+			remoteRef = 859C057925C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057C25C645F400BAFE90 /* libbrotlienc.1.0.7.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbrotlienc.1.0.7.dylib;
+			remoteRef = 859C057B25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C057E25C645F400BAFE90 /* libbrotlienc-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbrotlienc-static.a";
+			remoteRef = 859C057D25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C058025C645F400BAFE90 /* cjxl */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = cjxl;
+			remoteRef = 859C057F25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C058225C645F400BAFE90 /* libcjxltool.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcjxltool.a;
+			remoteRef = 859C058125C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C058625C645F400BAFE90 /* djxl */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = djxl;
+			remoteRef = 859C058525C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C058825C645F400BAFE90 /* libdjxltool.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdjxltool.a;
+			remoteRef = 859C058725C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C058C25C645F400BAFE90 /* libhwy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libhwy.a;
+			remoteRef = 859C058B25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059025C645F400BAFE90 /* hwy_list_targets */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = hwy_list_targets;
+			remoteRef = 859C058F25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059225C645F400BAFE90 /* libjxl.0.3.0.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libjxl.0.3.0.dylib;
+			remoteRef = 859C059125C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059425C645F400BAFE90 /* libjxl-obj.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjxl-obj.a";
+			remoteRef = 859C059325C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059625C645F400BAFE90 /* libjxl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjxl.a;
+			remoteRef = 859C059525C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059825C645F400BAFE90 /* libjxl_extras-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjxl_extras-static.a";
+			remoteRef = 859C059725C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059A25C645F400BAFE90 /* libjxl_threads.0.3.0.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libjxl_threads.0.3.0.dylib;
+			remoteRef = 859C059925C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059C25C645F400BAFE90 /* libjxl_threads.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjxl_threads.a;
+			remoteRef = 859C059B25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C059E25C645F400BAFE90 /* libjxl_tool.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjxl_tool.a;
+			remoteRef = 859C059D25C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859C05A625C645F400BAFE90 /* libskcms.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libskcms.a;
+			remoteRef = 859C05A525C645F400BAFE90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8573555B25B56054005FF7C2 /* Resources */ = {
@@ -592,7 +762,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\nchange_paths $app\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin\ndone\n";
+			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\n#change_paths $app\n#for dyl_bin in ${app_dyl_list[*]}; do\n#    change_paths $fw_path/$dyl_bin\n#done\n";
 		};
 		85FC6E4425BACF8E00A1AAF4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -609,7 +779,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\nchange_paths $app\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin\ndone\n";
+			shellScript = "#!/bin/sh\n\napp=$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\nfw_path=$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    echo change_path $bin\n    dyl_list=(`otool -L $bin | grep local | awk '{print $1}'`)\n\n    for dyl in ${dyl_list[*]}; do\n        libname=$(basename $dyl)\n        libname=${libname%%.*}\n        actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n        install_name_tool -change $dyl \"@executable_path/../Frameworks/$actual_libname\" $bin\n        printf \"\\t%s edited\\n\" $actual_libname\n        codesign --force --timestamp --sign \"Developer ID Application: Yung-Luen Lan (Z8M6R7T8R8)\" $bin\n    done\n}\n\n#change_paths $app\n#for dyl_bin in ${app_dyl_list[*]}; do\n#    change_paths $fw_path/$dyl_bin\n#done\n";
 		};
 		85FC6E5E25BB25AA00A1AAF4 /* Increment Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -681,6 +851,11 @@
 			isa = PBXTargetDependency;
 			target = 8573555C25B56054005FF7C2 /* JXLook */;
 			targetProxy = 8573557D25B56055005FF7C2 /* PBXContainerItemProxy */;
+		};
+		859C07DA25C646D100BAFE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = jxl;
+			targetProxy = 859C07D925C646D100BAFE90 /* PBXContainerItemProxy */;
 		};
 		85FC6DD425BAC56E00A1AAF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -837,14 +1012,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/lib/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/../Frameworks",
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/jpeg-xl/lib/**",
 					"$(inherited)",
 					"$(PROJECT_DIR)/jpeg-xl/lib",
 				);
@@ -871,14 +1045,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/lib/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/../Frameworks",
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/jpeg-xl/lib/**",
 					"$(inherited)",
 					"$(PROJECT_DIR)/jpeg-xl/lib",
 				);
@@ -978,13 +1151,14 @@
 		85FC6DD725BAC56E00A1AAF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = JXQuickLook/JXQuickLook.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/lib/include/**";
 				INFOPLIST_FILE = JXQuickLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1007,13 +1181,14 @@
 		85FC6DD825BAC56E00A1AAF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = JXQuickLook/JXQuickLook.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/lib/include/**";
 				INFOPLIST_FILE = JXQuickLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
