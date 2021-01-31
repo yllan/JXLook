@@ -61,13 +61,6 @@
 			remoteGlobalIDString = 7C0092276A0549239F7A7AA7;
 			remoteInfo = box;
 		};
-		859C057125C645F400BAFE90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B4D1D07B0D2F49CF85F21902;
-			remoteInfo = brotli;
-		};
 		859C057325C645F400BAFE90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */;
@@ -432,7 +425,6 @@
 			isa = PBXGroup;
 			children = (
 				859C057025C645F400BAFE90 /* libbox.a */,
-				859C057225C645F400BAFE90 /* brotli */,
 				859C057425C645F400BAFE90 /* libbrotlicommon.1.0.7.dylib */,
 				859C057625C645F400BAFE90 /* libbrotlicommon-static.a */,
 				859C057825C645F400BAFE90 /* libbrotlidec.1.0.7.dylib */,
@@ -476,11 +468,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8573558525B56055005FF7C2 /* Build configuration list for PBXNativeTarget "JXLook" */;
 			buildPhases = (
-				85FC6E5E25BB25AA00A1AAF4 /* Increment Build Number */,
 				8573555925B56054005FF7C2 /* Sources */,
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
 				85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */,
+				859C0A3C25C67F3000BAFE90 /* Increment the Build Number */,
 			);
 			buildRules = (
 			);
@@ -612,13 +604,6 @@
 			fileType = archive.ar;
 			path = libbox.a;
 			remoteRef = 859C056F25C645F400BAFE90 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		859C057225C645F400BAFE90 /* brotli */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = brotli;
-			remoteRef = 859C057125C645F400BAFE90 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		859C057425C645F400BAFE90 /* libbrotlicommon.1.0.7.dylib */ = {
@@ -798,7 +783,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		85FC6E5E25BB25AA00A1AAF4 /* Increment Build Number */ = {
+		859C0A3C25C67F3000BAFE90 /* Increment the Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -807,14 +792,14 @@
 			);
 			inputPaths = (
 			);
-			name = "Increment Build Number";
+			name = "Increment the Build Number";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+			shellScript = "/usr/bin/perl -i.backup -pe 's/APP_BUILD = (\\d+)/\"APP_BUILD = \".($1+1)/e' $PROJECT_DIR/JXLook.xcodeproj/project.pbxproj\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -935,6 +920,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUILD = 127;
+				APP_VERSION = 0.1.2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -996,6 +983,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUILD = 127;
+				APP_VERSION = 0.1.2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
