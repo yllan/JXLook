@@ -799,7 +799,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/perl -i.backup -pe 's/APP_BUILD = (\\d+)/\"APP_BUILD = \".($1+1)/e' $PROJECT_DIR/JXLook.xcodeproj/project.pbxproj\n";
+			shellScript = "#!/bin/bash\n\nCOMMIT_HASH=`git rev-parse --short HEAD`\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\nfind ${PROJECT_DIR} -name Info.plist -maxdepth 2 -exec /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $COMMIT_HASH\" '{}' ';'\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -920,7 +920,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BUILD = 127;
 				APP_VERSION = 0.1.2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -983,7 +982,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BUILD = 127;
 				APP_VERSION = 0.1.2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

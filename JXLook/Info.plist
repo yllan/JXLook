@@ -38,7 +38,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(APP_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>$(APP_BUILD)</string>
+	<string>24b4cd6</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.photography</string>
 	<key>LSMinimumSystemVersion</key>
