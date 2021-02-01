@@ -472,7 +472,6 @@
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
 				85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */,
-				859C0A3C25C67F3000BAFE90 /* Increment the Build Number */,
 			);
 			buildRules = (
 			);
@@ -781,27 +780,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		859C0A3C25C67F3000BAFE90 /* Increment the Build Number */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Increment the Build Number";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\nCOMMIT_HASH=`git rev-parse --short HEAD`\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\nfind ${PROJECT_DIR} -name Info.plist -maxdepth 2 -exec /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $COMMIT_HASH\" '{}' ';'\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8573555925B56054005FF7C2 /* Sources */ = {

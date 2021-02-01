@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1220"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "#!/bin/bash&#10;&#10;cd ${PROJECT_DIR}&#10;&#10;COMMIT_HASH=`git rev-parse --short HEAD`&#10;PLISTBUDDY=&quot;/usr/libexec/PlistBuddy&quot;&#10;&#10;echo $COMMIT_HASH &gt; /tmp/hash&#10;&#10;find ${PROJECT_DIR}/J* -name Info.plist -exec /usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion $COMMIT_HASH&quot; &apos;{}&apos; &apos;;&apos;&#10;"
+               shellToInvoke = "/bin/bash">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "8573555C25B56054005FF7C2"
+                     BuildableName = "JXLook.app"
+                     BlueprintName = "JXLook"
+                     ReferencedContainer = "container:JXLook.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
