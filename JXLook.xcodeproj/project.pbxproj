@@ -31,6 +31,8 @@
 		859C091225C656D500BAFE90 /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C059625C645F400BAFE90 /* libjxl.a */; };
 		859C091325C656D500BAFE90 /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C05A625C645F400BAFE90 /* libskcms.a */; };
 		859C091425C656DE00BAFE90 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573564725B5D4E2005FF7C2 /* libc++.tbd */; };
+		859C0BA725C7E22800BAFE90 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C0BA525C7E20000BAFE90 /* Sparkle.framework */; };
+		859C0BA825C7E22800BAFE90 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 859C0BA525C7E20000BAFE90 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
 		85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */; };
@@ -260,6 +262,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		859C0BA925C7E22900BAFE90 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				859C0BA825C7E22800BAFE90 /* Sparkle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +306,7 @@
 		8598D00E25B805AE00C08958 /* CenterClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
 		859C054525C645F300BAFE90 /* JPEGXL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPEGXL.xcodeproj; path = "jpeg-xl/xcode/JPEGXL.xcodeproj"; sourceTree = "<group>"; };
 		859C090925C6566400BAFE90 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		859C0BA525C7E20000BAFE90 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -312,6 +326,7 @@
 				859C090D25C656D500BAFE90 /* libbrotlicommon-static.a in Frameworks */,
 				859C090E25C656D500BAFE90 /* libbrotlidec-static.a in Frameworks */,
 				859C090F25C656D500BAFE90 /* libbrotlienc-static.a in Frameworks */,
+				859C0BA725C7E22800BAFE90 /* Sparkle.framework in Frameworks */,
 				859C091025C656D500BAFE90 /* libhwy.a in Frameworks */,
 				859C091125C656D500BAFE90 /* libjxl_threads.a in Frameworks */,
 				859C091225C656D500BAFE90 /* libjxl.a in Frameworks */,
@@ -414,6 +429,7 @@
 		8573563025B57300005FF7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				859C0BA525C7E20000BAFE90 /* Sparkle.framework */,
 				859C090925C6566400BAFE90 /* libc++.1.tbd */,
 				8573564725B5D4E2005FF7C2 /* libc++.tbd */,
 				85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */,
@@ -472,6 +488,7 @@
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
 				85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */,
+				859C0BA925C7E22900BAFE90 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1024,6 +1041,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/lib/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1057,6 +1078,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/lib/include/**";
 				INFOPLIST_FILE = JXLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
