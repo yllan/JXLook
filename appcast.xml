@@ -9,7 +9,8 @@
             <sparkle:releaseNotesLink>
                 https://yllan.github.io/JXLook/releasenotes/0.1.3.html
             </sparkle:releaseNotesLink>
-            <sparkle:version>0.1.3</sparkle:version>
+            <sparkle:version>hexhex</sparkle:version>
+            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
             <link>https://github.com/yllan/JXLook/releases/tag/v0.1.3</link>
         </item>
     </channel>
