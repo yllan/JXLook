@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "#!/bin/bash&#10;&#10;cd ${PROJECT_DIR}&#10;&#10;COMMIT_HASH=`git rev-parse --short HEAD`&#10;PLISTBUDDY=&quot;/usr/libexec/PlistBuddy&quot;&#10;&#10;echo $COMMIT_HASH &gt; /tmp/hash&#10;&#10;find ${PROJECT_DIR}/J* -name Info.plist -exec /usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion $COMMIT_HASH&quot; &apos;{}&apos; &apos;;&apos;&#10;"
+               scriptText = "#!/bin/bash&#10;&#10;cd ${PROJECT_DIR}&#10;&#10;COMMIT_HASH=`git rev-parse --short HEAD`&#10;PLISTBUDDY=&quot;/usr/libexec/PlistBuddy&quot;&#10;OLDVER=`$PLISTBUDDY -c &quot;Print :CFBundleVersion&quot; ${PROJECT_DIR}/JXLook/Info.plist`&#10;NEWVER=$((OLDVER+1))&#10;&#10;find ${PROJECT_DIR}/J* -name Info.plist -exec /usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion $NEWVER&quot; &apos;{}&apos; &apos;;&apos;&#10;"
                shellToInvoke = "/bin/bash">
                <EnvironmentBuildable>
                   <BuildableReference
