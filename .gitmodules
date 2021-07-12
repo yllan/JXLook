@@ -1,3 +1,3 @@
 [submodule "jpeg-xl"]
 	path = jpeg-xl
-	url = https://gitlab.com/yllan_tw/jpeg-xl.git
+	url = https://github.com/libjxl/libjxl.git

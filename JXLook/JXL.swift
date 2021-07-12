@@ -57,6 +57,9 @@ struct JXL {
                         Swift.print("Cannot get basic info")
                         break parsingLoop
                     }
+                    if infoPtr.pointee.num_color_channels == 1 {
+                        format = JxlPixelFormat(num_channels: 1, data_type: infoPtr.pointee.bits_per_sample == 16 ? JXL_TYPE_UINT16 : JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
+                    }
                     Swift.print("basic info: \(infoPtr.pointee)")
                 case JXL_DEC_SUCCESS:
                     return true
@@ -73,16 +76,30 @@ struct JXL {
                     
                 case JXL_DEC_FULL_IMAGE:
                     let info = infoPtr.pointee
-                    let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .sRGB
-                    if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32)?.retagging(with: colorSpace) {
-                        imageRep.size = CGSize(width: Int(info.xsize) / 2, height: Int(info.ysize) / 2)
-                        if let pixels = imageRep.bitmapData {
-                            memmove(pixels, buffer.baseAddress, buffer.count)
+                    if info.num_color_channels == 1 { // greyscale
+                        let colorSpace: NSColorSpace = .genericGray
+                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: 1, hasAlpha: false, isPlanar: false, colorSpaceName: .calibratedWhite, bytesPerRow: Int(info.bits_per_sample) / 8 * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample))?.retagging(with: colorSpace) {
+                            imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
+                            if let pixels = imageRep.bitmapData {
+                                memmove(pixels, buffer.baseAddress, buffer.count)
+                            }
+                            let img = NSImage(size: imageRep.size)
+                            img.addRepresentation(imageRep)
+                            image = img
                         }
-                        let img = NSImage(size: imageRep.size)
-                        img.addRepresentation(imageRep)
-                        image = img
+                    } else { // assume it's rgb
+                        let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .sRGB
+                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32)?.retagging(with: colorSpace) {
+                            imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
+                            if let pixels = imageRep.bitmapData {
+                                memmove(pixels, buffer.baseAddress, buffer.count)
+                            }
+                            let img = NSImage(size: imageRep.size)
+                            img.addRepresentation(imageRep)
+                            image = img
+                        }
                     }
+
                     
                 case JXL_DEC_NEED_IMAGE_OUT_BUFFER:
                     var outputBufferSize: Int = 0

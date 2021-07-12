@@ -33,10 +33,21 @@ class PreviewViewController: NSViewController, QLPreviewingController {
     func preparePreviewOfFile(at url: URL, completionHandler handler: @escaping (Error?) -> Void) {
         
         // Add the supported content types to the QLSupportedContentTypes array in the Info.plist of the extension.
-        
         // Perform any setup necessary in order to prepare the view.
         if let img = try? JXL.parse(data: Data(contentsOf: url)) {
             imageView.image = img
+            if let window = self.view.window {
+                let maxWindowFrame = window.constrainFrameRect(CGRect(origin: CGPoint.zero, size: CGSize(width: img.size.width, height: img.size.height)), to: window.screen)
+                Swift.print(maxWindowFrame)
+                if img.size.width > maxWindowFrame.width || img.size.height > maxWindowFrame.height {
+                    let ratio = min(maxWindowFrame.width / img.size.width, maxWindowFrame.height / img.size.height)
+                    let newSize = CGSize(width: max(300, img.size.width * ratio), height: max(300, img.size.height * ratio))
+                    self.preferredContentSize = newSize
+                } else {
+                    self.preferredContentSize = img.size
+                }
+                
+            }
         } else {
             handler(JXLError.cannotDecode)
         }
