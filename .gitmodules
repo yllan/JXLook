@@ -1,3 +1,0 @@
-[submodule "jpeg-xl"]
-	path = jpeg-xl
-	url = https://github.com/libjxl/libjxl.git
