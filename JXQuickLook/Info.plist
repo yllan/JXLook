@@ -26,6 +26,8 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
+			<key>QLIsDataBasedPreview</key>
+			<true/>
 			<key>QLSupportedContentTypes</key>
 			<array>
 				<string>org.jpeg.jpeg-xl</string>
