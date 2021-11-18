@@ -30,6 +30,18 @@ class PreviewViewController: NSViewController, QLPreviewingController {
         handler(nil)
     }
     */
+    @available(macOSApplicationExtension 12.0, *)
+    func providePreview(for request: QLFilePreviewRequest,
+                        completionHandler handler: @escaping (QLPreviewReply?, Error?) -> Void) {
+        if let img = try? JXL.parse(data: Data(contentsOf: request.fileURL)) {
+            let reply = QLPreviewReply(dataOfContentType: .image, contentSize: img.size) { preview in
+                return img.tiffRepresentation ?? "Unreachable!".data(using: .utf8)!;
+            }
+            handler(reply, nil);
+        }
+        handler(nil, JXLError.cannotDecode);
+    }
+    
     func preparePreviewOfFile(at url: URL, completionHandler handler: @escaping (Error?) -> Void) {
         
         // Add the supported content types to the QLSupportedContentTypes array in the Info.plist of the extension.
