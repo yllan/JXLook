@@ -15,7 +15,7 @@ enum JXLError: Error {
 struct JXL {
     static func parse(data: Data) throws -> NSImage? {
         var image: NSImage? = nil
-        var buffer: UnsafeMutableBufferPointer<UInt8> = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: 1)
+        var buffer: UnsafeMutableBufferPointer<Float> = UnsafeMutableBufferPointer<Float>.allocate(capacity: 1)
         var icc: UnsafeMutableBufferPointer<UInt8>? = nil
         
         let isValid = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
@@ -44,7 +44,7 @@ struct JXL {
                 infoPtr.deallocate()
             }
             
-            var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
+            var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_FLOAT, endianness: JXL_NATIVE_ENDIAN, align: 0)
             
             JxlDecoderSetInput(decoder, nextIn, bytes.count)
             
@@ -89,8 +89,11 @@ struct JXL {
                         }
                     } else { // assume it's rgb
                         let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .sRGB
-                        let bitmapFormat: NSBitmapImageRep.Format = info.alpha_premultiplied != 0 ? .init(rawValue: 0) : .alphaNonpremultiplied
-                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bitmapFormat: bitmapFormat, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32)?.retagging(with: colorSpace) {
+                        var bitmapFormat: UInt = NSBitmapImageRep.Format.floatingPointSamples.rawValue;
+                        if (info.alpha_premultiplied == 0) {
+                            bitmapFormat |= NSBitmapImageRep.Format.alphaNonpremultiplied.rawValue
+                        }
+                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 32, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bitmapFormat: .init(rawValue: bitmapFormat), bytesPerRow: 16 * Int(info.xsize), bitsPerPixel: 128)?.retagging(with: colorSpace) {
                             imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
                             if let pixels = imageRep.bitmapData {
                                 memmove(pixels, buffer.baseAddress, buffer.count)
@@ -110,7 +113,7 @@ struct JXL {
                     Swift.print("buffer size: \(outputBufferSize)")
                     
                     buffer.deallocate()
-                    buffer = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: outputBufferSize)
+                    buffer = UnsafeMutableBufferPointer<Float>.allocate(capacity: outputBufferSize)
                     
                     if JxlDecoderSetImageOutBuffer(decoder, &format, buffer.baseAddress, outputBufferSize) != JXL_DEC_SUCCESS {
                         Swift.print("cannot write buffer")
