@@ -76,6 +76,11 @@ struct JXL {
                     
                 case JXL_DEC_FULL_IMAGE:
                     let info = infoPtr.pointee
+                    if (image != nil) {
+                        // todo: support animated JSX
+                        // Currently returns the first frame
+                        return true;
+                    }
                     if info.num_color_channels == 1 { // greyscale
                         let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .genericGray
                         if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: 1, hasAlpha: false, isPlanar: false, colorSpaceName: .calibratedWhite, bytesPerRow: Int(info.bits_per_sample) / 8 * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample))?.retagging(with: colorSpace) {
