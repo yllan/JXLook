@@ -94,7 +94,6 @@ struct JXL {
                             bitmapFormat |= NSBitmapImageRep.Format.alphaNonpremultiplied.rawValue
                         }
                         if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: num_channels, hasAlpha: info.alpha_bits != 0, isPlanar: false, colorSpaceName: .calibratedWhite, bitmapFormat: .init(rawValue: bitmapFormat), bytesPerRow: Int(info.bits_per_sample) / 8 * num_channels * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample) * num_channels)?.retagging(with: colorSpace) {
-                            imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
                             if let pixels = imageRep.bitmapData {
                                 memmove(pixels, buffer.baseAddress, buffer.count)
                             }
@@ -111,7 +110,6 @@ struct JXL {
                             bitmapFormat |= NSBitmapImageRep.Format.alphaNonpremultiplied.rawValue
                         }
                         if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 32, samplesPerPixel: num_channels, hasAlpha: info.alpha_bits != 0, isPlanar: false, colorSpaceName: colorSpaceName, bitmapFormat: .init(rawValue: bitmapFormat), bytesPerRow: 4 * num_channels * Int(info.xsize), bitsPerPixel: 32 * num_channels)?.retagging(with: colorSpace) {
-                            imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
                             if let pixels = imageRep.bitmapData {
                                 memmove(pixels, buffer.baseAddress, buffer.count)
                             }
