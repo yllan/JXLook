@@ -77,7 +77,7 @@ struct JXL {
                 case JXL_DEC_FULL_IMAGE:
                     let info = infoPtr.pointee
                     if info.num_color_channels == 1 { // greyscale
-                        let colorSpace: NSColorSpace = .genericGray
+                        let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .genericGray
                         if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: 1, hasAlpha: false, isPlanar: false, colorSpaceName: .calibratedWhite, bytesPerRow: Int(info.bits_per_sample) / 8 * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample))?.retagging(with: colorSpace) {
                             imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
                             if let pixels = imageRep.bitmapData {
