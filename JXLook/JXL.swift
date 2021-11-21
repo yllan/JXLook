@@ -58,15 +58,13 @@ struct JXL {
                         break parsingLoop
                     }
                     let info: JxlBasicInfo = infoPtr.pointee
-                    if info.num_color_channels == 1 {
-                        format = JxlPixelFormat(num_channels: 1, data_type: infoPtr.pointee.bits_per_sample == 16 ? JXL_TYPE_UINT16 : JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
-                    } else {
-                        var output_num_channels: UInt32 = 3; // assume rgb
-                        if info.alpha_bits != 0 {
-                            output_num_channels = 4 // output rgba if we have alpha channel
-                        }
-                        format = JxlPixelFormat(num_channels: output_num_channels, data_type: JXL_TYPE_FLOAT, endianness: JXL_NATIVE_ENDIAN, align: 0)
+                    var output_num_channels: UInt32 = info.num_color_channels;
+                    if info.alpha_bits != 0 {
+                        output_num_channels += 1 // output rgba if we have alpha channel
                     }
+                    let data_type: JxlDataType = output_num_channels < 3 ? info.bits_per_sample == 16 ? JXL_TYPE_UINT16 : JXL_TYPE_UINT8 : JXL_TYPE_FLOAT;
+                    format = JxlPixelFormat(num_channels: output_num_channels, data_type: data_type, endianness: JXL_NATIVE_ENDIAN, align: 0)
+                    
                     Swift.print("basic info: \(infoPtr.pointee)")
                 case JXL_DEC_SUCCESS:
                     return true
@@ -89,8 +87,13 @@ struct JXL {
                         return true;
                     }
                     if info.num_color_channels == 1 { // greyscale
+                        let num_channels = Int(format.num_channels)
                         let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .genericGray
-                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: 1, hasAlpha: false, isPlanar: false, colorSpaceName: .calibratedWhite, bytesPerRow: Int(info.bits_per_sample) / 8 * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample))?.retagging(with: colorSpace) {
+                        var bitmapFormat: UInt = 0;
+                        if (info.alpha_premultiplied == 0) {
+                            bitmapFormat |= NSBitmapImageRep.Format.alphaNonpremultiplied.rawValue
+                        }
+                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: num_channels, hasAlpha: info.alpha_bits != 0, isPlanar: false, colorSpaceName: .calibratedWhite, bitmapFormat: .init(rawValue: bitmapFormat), bytesPerRow: Int(info.bits_per_sample) / 8 * num_channels * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample) * num_channels)?.retagging(with: colorSpace) {
                             imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
                             if let pixels = imageRep.bitmapData {
                                 memmove(pixels, buffer.baseAddress, buffer.count)
