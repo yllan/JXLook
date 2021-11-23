@@ -39,6 +39,19 @@
 		85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85FC6E5025BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 		85FC6E5125BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
+		E99A66BF2745FA670008848F /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A66BE2745FA670008848F /* QuickLookThumbnailing.framework */; platformFilter = maccatalyst; };
+		E99A66C02745FA670008848F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
+		E99A66C32745FA670008848F /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A66C22745FA670008848F /* ThumbnailProvider.swift */; };
+		E99A66C82745FA670008848F /* JXQuickLookThumbnail.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E99A66CC2745FB620008848F /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */; };
+		E99A66CD2745FB620008848F /* libbrotlidec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBB269C9A4F0036A75E /* libbrotlidec-static.a */; };
+		E99A66CE2745FB620008848F /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C090925C6566400BAFE90 /* libc++.1.tbd */; };
+		E99A66CF2745FB620008848F /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBC269C9A4F0036A75E /* libjxl_threads.a */; };
+		E99A66D02745FB620008848F /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBD269C9A4F0036A75E /* libhwy.a */; };
+		E99A66D12745FB620008848F /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC1269C9A4F0036A75E /* libskcms.a */; };
+		E99A66D22745FB620008848F /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBE269C9A4F0036A75E /* libjxl.a */; };
+		E99A66D32745FB620008848F /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */; };
+		E99A66D6274603540008848F /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +76,13 @@
 			remoteGlobalIDString = 85FC6DC725BAC56E00A1AAF4;
 			remoteInfo = JXQuickLook;
 		};
+		E99A66C62745FA670008848F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8573555525B56054005FF7C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99A66BC2745FA670008848F;
+			remoteInfo = JXQuickLookThumbnail;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +103,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				E99A66C82745FA670008848F /* JXQuickLookThumbnail.appex in Embed App Extensions */,
 				85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -142,6 +163,12 @@
 		85FC6DD225BAC56E00A1AAF4 /* JXQuickLook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JXQuickLook.entitlements; sourceTree = "<group>"; };
 		85FC6E4725BAD00000A1AAF4 /* JXQuickLook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXQuickLook-Bridging-Header.h"; sourceTree = "<group>"; };
 		85FC6E4F25BAD03500A1AAF4 /* JXL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXL.swift; sourceTree = "<group>"; };
+		E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLookThumbnail.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99A66BE2745FA670008848F /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		E99A66C22745FA670008848F /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		E99A66C42745FA670008848F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99A66C52745FA670008848F /* JXQuickLookThumbnail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JXQuickLookThumbnail.entitlements; sourceTree = "<group>"; };
+		E99A66D5274602B30008848F /* JXQuickLookThumbnail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXQuickLookThumbnail-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E99A66BA2745FA670008848F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99A66CC2745FB620008848F /* libbrotlicommon-static.a in Frameworks */,
+				E99A66CD2745FB620008848F /* libbrotlidec-static.a in Frameworks */,
+				E99A66CE2745FB620008848F /* libc++.1.tbd in Frameworks */,
+				E99A66CF2745FB620008848F /* libjxl_threads.a in Frameworks */,
+				E99A66D02745FB620008848F /* libhwy.a in Frameworks */,
+				E99A66D12745FB620008848F /* libskcms.a in Frameworks */,
+				E99A66D22745FB620008848F /* libjxl.a in Frameworks */,
+				E99A66D32745FB620008848F /* libbrotlienc-static.a in Frameworks */,
+				E99A66BF2745FA670008848F /* QuickLookThumbnailing.framework in Frameworks */,
+				E99A66C02745FA670008848F /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -202,6 +246,7 @@
 				8573557425B56055005FF7C2 /* JXLookTests */,
 				8573557F25B56055005FF7C2 /* JXLookUITests */,
 				85FC6DCB25BAC56E00A1AAF4 /* JXQuickLook */,
+				E99A66C12745FA670008848F /* JXQuickLookThumbnail */,
 				8573555E25B56054005FF7C2 /* Products */,
 				8573563025B57300005FF7C2 /* Frameworks */,
 			);
@@ -214,6 +259,7 @@
 				8573557125B56055005FF7C2 /* JXLookTests.xctest */,
 				8573557C25B56055005FF7C2 /* JXLookUITests.xctest */,
 				85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */,
+				E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +306,7 @@
 				859C090925C6566400BAFE90 /* libc++.1.tbd */,
 				8573564725B5D4E2005FF7C2 /* libc++.tbd */,
 				85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */,
+				E99A66BE2745FA670008848F /* QuickLookThumbnailing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,6 +378,17 @@
 			path = JXQuickLook;
 			sourceTree = "<group>";
 		};
+		E99A66C12745FA670008848F /* JXQuickLookThumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				E99A66C22745FA670008848F /* ThumbnailProvider.swift */,
+				E99A66C42745FA670008848F /* Info.plist */,
+				E99A66C52745FA670008848F /* JXQuickLookThumbnail.entitlements */,
+				E99A66D5274602B30008848F /* JXQuickLookThumbnail-Bridging-Header.h */,
+			);
+			path = JXQuickLookThumbnail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +406,7 @@
 			);
 			dependencies = (
 				85FC6DD425BAC56E00A1AAF4 /* PBXTargetDependency */,
+				E99A66C72745FA670008848F /* PBXTargetDependency */,
 			);
 			name = JXLook;
 			productName = JXLook;
@@ -407,6 +466,23 @@
 			productReference = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		E99A66BC2745FA670008848F /* JXQuickLookThumbnail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99A66CB2745FA670008848F /* Build configuration list for PBXNativeTarget "JXQuickLookThumbnail" */;
+			buildPhases = (
+				E99A66B92745FA670008848F /* Sources */,
+				E99A66BA2745FA670008848F /* Frameworks */,
+				E99A66BB2745FA670008848F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXQuickLookThumbnail;
+			productName = JXQuickLookThumbnail;
+			productReference = E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -432,6 +508,9 @@
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
 					};
+					E99A66BC2745FA670008848F = {
+						CreatedOnToolsVersion = 13.1;
+					};
 				};
 			};
 			buildConfigurationList = 8573555825B56054005FF7C2 /* Build configuration list for PBXProject "JXLook" */;
@@ -451,6 +530,7 @@
 				8573557025B56055005FF7C2 /* JXLookTests */,
 				8573557B25B56055005FF7C2 /* JXLookUITests */,
 				85FC6DC725BAC56E00A1AAF4 /* JXQuickLook */,
+				E99A66BC2745FA670008848F /* JXQuickLookThumbnail */,
 			);
 		};
 /* End PBXProject section */
@@ -484,6 +564,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99A66BB2745FA670008848F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +614,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E99A66B92745FA670008848F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99A66D6274603540008848F /* JXL.swift in Sources */,
+				E99A66C32745FA670008848F /* ThumbnailProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -544,6 +640,11 @@
 			isa = PBXTargetDependency;
 			target = 85FC6DC725BAC56E00A1AAF4 /* JXQuickLook */;
 			targetProxy = 85FC6DD325BAC56E00A1AAF4 /* PBXContainerItemProxy */;
+		};
+		E99A66C72745FA670008848F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99A66BC2745FA670008848F /* JXQuickLookThumbnail */;
+			targetProxy = E99A66C62745FA670008848F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -904,6 +1005,74 @@
 			};
 			name = Release;
 		};
+		E99A66C92745FA670008848F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = JXQuickLookThumbnail/JXQuickLookThumbnail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8M6R7T8R8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				INFOPLIST_FILE = JXQuickLookThumbnail/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JXQuickLookThumbnail;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jpeg-xl/lib",
+				);
+				MARKETING_VERSION = 0.1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook.JXQuickLookThumbnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JXQuickLookThumbnail/JXQuickLookThumbnail-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E99A66CA2745FA670008848F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = JXQuickLookThumbnail/JXQuickLookThumbnail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8M6R7T8R8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
+				INFOPLIST_FILE = JXQuickLookThumbnail/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JXQuickLookThumbnail;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jpeg-xl/lib",
+				);
+				MARKETING_VERSION = 0.1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLook.JXQuickLookThumbnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JXQuickLookThumbnail/JXQuickLookThumbnail-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -948,6 +1117,15 @@
 			buildConfigurations = (
 				85FC6DD725BAC56E00A1AAF4 /* Debug */,
 				85FC6DD825BAC56E00A1AAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99A66CB2745FA670008848F /* Build configuration list for PBXNativeTarget "JXQuickLookThumbnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99A66C92745FA670008848F /* Debug */,
+				E99A66CA2745FA670008848F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
