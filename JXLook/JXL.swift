@@ -15,7 +15,7 @@ enum JXLError: Error {
 struct JXL {
     static func parse(data: Data) throws -> NSImage? {
         var image: NSImage? = nil
-        var buffer: UnsafeMutableBufferPointer<UInt8> = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: 1)
+        var buffer: UnsafeMutableBufferPointer<Float> = UnsafeMutableBufferPointer<Float>.allocate(capacity: 1)
         var icc: UnsafeMutableBufferPointer<UInt8>? = nil
         
         let isValid = data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Bool in
@@ -44,7 +44,7 @@ struct JXL {
                 infoPtr.deallocate()
             }
             
-            var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
+            var format = JxlPixelFormat(num_channels: 4, data_type: JXL_TYPE_FLOAT, endianness: JXL_NATIVE_ENDIAN, align: 0)
             
             JxlDecoderSetInput(decoder, nextIn, bytes.count)
             
@@ -57,9 +57,14 @@ struct JXL {
                         Swift.print("Cannot get basic info")
                         break parsingLoop
                     }
-                    if infoPtr.pointee.num_color_channels == 1 {
-                        format = JxlPixelFormat(num_channels: 1, data_type: infoPtr.pointee.bits_per_sample == 16 ? JXL_TYPE_UINT16 : JXL_TYPE_UINT8, endianness: JXL_NATIVE_ENDIAN, align: 0)
+                    let info: JxlBasicInfo = infoPtr.pointee
+                    var output_num_channels: UInt32 = info.num_color_channels;
+                    if info.alpha_bits != 0 {
+                        output_num_channels += 1 // output rgba if we have alpha channel
                     }
+                    let data_type: JxlDataType = output_num_channels < 3 ? info.bits_per_sample == 16 ? JXL_TYPE_UINT16 : JXL_TYPE_UINT8 : JXL_TYPE_FLOAT;
+                    format = JxlPixelFormat(num_channels: output_num_channels, data_type: data_type, endianness: JXL_NATIVE_ENDIAN, align: 0)
+                    
                     Swift.print("basic info: \(infoPtr.pointee)")
                 case JXL_DEC_SUCCESS:
                     return true
@@ -76,10 +81,19 @@ struct JXL {
                     
                 case JXL_DEC_FULL_IMAGE:
                     let info = infoPtr.pointee
+                    if (image != nil) {
+                        // todo: support animated JSX
+                        // Currently returns the first frame
+                        return true;
+                    }
                     if info.num_color_channels == 1 { // greyscale
-                        let colorSpace: NSColorSpace = .genericGray
-                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: 1, hasAlpha: false, isPlanar: false, colorSpaceName: .calibratedWhite, bytesPerRow: Int(info.bits_per_sample) / 8 * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample))?.retagging(with: colorSpace) {
-                            imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
+                        let num_channels = Int(format.num_channels)
+                        let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .genericGray
+                        var bitmapFormat: UInt = 0;
+                        if (info.alpha_premultiplied == 0) {
+                            bitmapFormat |= NSBitmapImageRep.Format.alphaNonpremultiplied.rawValue
+                        }
+                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: Int(info.bits_per_sample), samplesPerPixel: num_channels, hasAlpha: info.alpha_bits != 0, isPlanar: false, colorSpaceName: .calibratedWhite, bitmapFormat: .init(rawValue: bitmapFormat), bytesPerRow: Int(info.bits_per_sample) / 8 * num_channels * Int(info.xsize), bitsPerPixel: Int(info.bits_per_sample) * num_channels)?.retagging(with: colorSpace) {
                             if let pixels = imageRep.bitmapData {
                                 memmove(pixels, buffer.baseAddress, buffer.count)
                             }
@@ -88,9 +102,14 @@ struct JXL {
                             image = img
                         }
                     } else { // assume it's rgb
+                        let num_channels = Int(format.num_channels)
                         let colorSpace = icc.flatMap({ NSColorSpace(iccProfileData: Data(buffer: $0)) }) ?? .sRGB
-                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .calibratedRGB, bytesPerRow: 4 * Int(info.xsize), bitsPerPixel: 32)?.retagging(with: colorSpace) {
-                            imageRep.size = CGSize(width: Int(info.xsize), height: Int(info.ysize))
+                        let colorSpaceName: NSColorSpaceName = .calibratedRGB
+                        var bitmapFormat: UInt = NSBitmapImageRep.Format.floatingPointSamples.rawValue;
+                        if (info.alpha_premultiplied == 0) {
+                            bitmapFormat |= NSBitmapImageRep.Format.alphaNonpremultiplied.rawValue
+                        }
+                        if let imageRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(info.xsize), pixelsHigh: Int(info.ysize), bitsPerSample: 32, samplesPerPixel: num_channels, hasAlpha: info.alpha_bits != 0, isPlanar: false, colorSpaceName: colorSpaceName, bitmapFormat: .init(rawValue: bitmapFormat), bytesPerRow: 4 * num_channels * Int(info.xsize), bitsPerPixel: 32 * num_channels)?.retagging(with: colorSpace) {
                             if let pixels = imageRep.bitmapData {
                                 memmove(pixels, buffer.baseAddress, buffer.count)
                             }
@@ -109,7 +128,7 @@ struct JXL {
                     Swift.print("buffer size: \(outputBufferSize)")
                     
                     buffer.deallocate()
-                    buffer = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: outputBufferSize)
+                    buffer = UnsafeMutableBufferPointer<Float>.allocate(capacity: outputBufferSize)
                     
                     if JxlDecoderSetImageOutBuffer(decoder, &format, buffer.baseAddress, outputBufferSize) != JXL_DEC_SUCCESS {
                         Swift.print("cannot write buffer")

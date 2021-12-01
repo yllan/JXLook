@@ -31,7 +31,6 @@
 		85E59CCB269C9A4F0036A75E /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */; };
 		85E59CCC269C9A4F0036A75E /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */; };
 		85E59CCD269C9A4F0036A75E /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */; };
-		85E59CCE269C9A4F0036A75E /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC1269C9A4F0036A75E /* libskcms.a */; };
 		85E59CCF269C9A4F0036A75E /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC1269C9A4F0036A75E /* libskcms.a */; };
 		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
@@ -181,7 +180,6 @@
 				859C091425C656DE00BAFE90 /* libc++.tbd in Frameworks */,
 				85E59CC4269C9A4F0036A75E /* libjxl_threads.a in Frameworks */,
 				85E59CC6269C9A4F0036A75E /* libhwy.a in Frameworks */,
-				85E59CCE269C9A4F0036A75E /* libskcms.a in Frameworks */,
 				85E59CC8269C9A4F0036A75E /* libjxl.a in Frameworks */,
 				85E59CCA269C9A4F0036A75E /* libbrotlienc-static.a in Frameworks */,
 				859C0BA725C7E22800BAFE90 /* Sparkle.framework in Frameworks */,
