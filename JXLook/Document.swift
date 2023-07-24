@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import os
 
 class Document: NSDocument {
     var image: NSImage? = nil
@@ -46,6 +47,9 @@ class Document: NSDocument {
         }
         guard isValid else {
             throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        }
+        if let lastPathComponent = fileURL?.lastPathComponent {
+            os_log("Decoding file: %{private}@", log: .decode, type: .info, lastPathComponent)
         }
         self.image = try? JXL.parse(data: data)
     }

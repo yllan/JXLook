@@ -9,15 +9,15 @@
 #  ifndef JXL_THREADS_EXPORT
 #    ifdef JXL_THREADS_INTERNAL_LIBRARY_BUILD
         /* We are building this library */
-#      define JXL_THREADS_EXPORT __attribute__((visibility("default")))
+#      define JXL_THREADS_EXPORT 
 #    else
         /* We are using this library */
-#      define JXL_THREADS_EXPORT __attribute__((visibility("default")))
+#      define JXL_THREADS_EXPORT 
 #    endif
 #  endif
 
 #  ifndef JXL_THREADS_NO_EXPORT
-#    define JXL_THREADS_NO_EXPORT __attribute__((visibility("hidden")))
+#    define JXL_THREADS_NO_EXPORT 
 #  endif
 #endif
 

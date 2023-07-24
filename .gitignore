@@ -95,3 +95,6 @@ fastlane/test_output
 iOSInjectionProject/
 ## Gcc Patch
 /*.gcno
+
+# macOS Finder Desktop Services Store files
+**/.DS_Store
