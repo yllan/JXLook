@@ -3,10 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511A08D02A35475900A2C2EB /* libbrotlicommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A08CD2A35475900A2C2EB /* libbrotlicommon.a */; };
+		511A08D12A35475900A2C2EB /* libbrotlidec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A08CE2A35475900A2C2EB /* libbrotlidec.a */; };
+		511A08D52A354ABC00A2C2EB /* libbrotlidec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A08CE2A35475900A2C2EB /* libbrotlidec.a */; };
+		511A08D62A354AD300A2C2EB /* libbrotlicommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A08CD2A35475900A2C2EB /* libbrotlicommon.a */; };
+		511A08D72A354B1200A2C2EB /* libbrotlicommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A08CD2A35475900A2C2EB /* libbrotlicommon.a */; };
+		511A08D82A354B1600A2C2EB /* libbrotlidec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A08CE2A35475900A2C2EB /* libbrotlidec.a */; };
+		511A32A52A4A093C00F72A05 /* OSLogExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D7042D2A4A05A400A462D6 /* OSLogExtension.swift */; };
+		511A32A62A4A094D00F72A05 /* OSLogExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D7042D2A4A05A400A462D6 /* OSLogExtension.swift */; };
+		511A32A82A4A459300F72A05 /* NSScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A32A72A4A459300F72A05 /* NSScreenExtension.swift */; };
+		512A21852A533701001E63F3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A21842A533701001E63F3 /* Settings.swift */; };
+		512A21882A533716001E63F3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512A21862A533716001E63F3 /* Settings.storyboard */; };
+		51369D2D2A3811BA00A1F1F1 /* EnumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51369D2C2A3811BA00A1F1F1 /* EnumExtensions.swift */; };
+		5147148E2A38C308000A664A /* EnumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51369D2C2A3811BA00A1F1F1 /* EnumExtensions.swift */; };
+		5147148F2A38C345000A664A /* EnumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51369D2C2A3811BA00A1F1F1 /* EnumExtensions.swift */; };
+		518BBC2D2A4F7B9B004B4F9D /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518BBC2C2A4F7B9B004B4F9D /* NSImageExtension.swift */; };
+		51A571892A36990C0003E685 /* MetalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A571882A36990C0003E685 /* MetalImageView.swift */; };
+		51D7042E2A4A05A400A462D6 /* OSLogExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D7042D2A4A05A400A462D6 /* OSLogExtension.swift */; };
+		51E49F9A2A562D70003C429B /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E49F992A562D70003C429B /* CIImageExtension.swift */; };
+		51EEA2992A4FCE3A001F20AA /* disableHighDynamicRange in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2912A4FCE3A001F20AA /* disableHighDynamicRange */; };
+		51EEA29A2A4FCE3A001F20AA /* enableHighDynamicRange in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2922A4FCE3A001F20AA /* enableHighDynamicRange */; };
+		51EEA29B2A4FCE3A001F20AA /* disableToneMapping in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2932A4FCE3A001F20AA /* disableToneMapping */; };
+		51EEA29C2A4FCE3A001F20AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2942A4FCE3A001F20AA /* README.md */; };
+		51EEA29D2A4FCE3B001F20AA /* streamLog in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2952A4FCE3A001F20AA /* streamLog */; };
+		51EEA29E2A4FCE3B001F20AA /* enableToneMapping in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2962A4FCE3A001F20AA /* enableToneMapping */; };
+		51EEA29F2A4FCE3B001F20AA /* enableExtendedDynamicRange in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2972A4FCE3A001F20AA /* enableExtendedDynamicRange */; };
+		51EEA2A02A4FCE3B001F20AA /* disableExtendedDynamicRange in Resources */ = {isa = PBXBuildFile; fileRef = 51EEA2982A4FCE3A001F20AA /* disableExtendedDynamicRange */; };
 		8573556125B56054005FF7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573556025B56054005FF7C2 /* AppDelegate.swift */; };
 		8573556325B56054005FF7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573556225B56054005FF7C2 /* ViewController.swift */; };
 		8573556525B56054005FF7C2 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573556425B56054005FF7C2 /* Document.swift */; };
@@ -19,37 +45,26 @@
 		859C091425C656DE00BAFE90 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573564725B5D4E2005FF7C2 /* libc++.tbd */; };
 		859C0BA725C7E22800BAFE90 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C0BA525C7E20000BAFE90 /* Sparkle.framework */; };
 		859C0BA825C7E22800BAFE90 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 859C0BA525C7E20000BAFE90 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		85E59CC2269C9A4F0036A75E /* libbrotlidec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBB269C9A4F0036A75E /* libbrotlidec-static.a */; };
-		85E59CC3269C9A4F0036A75E /* libbrotlidec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBB269C9A4F0036A75E /* libbrotlidec-static.a */; };
 		85E59CC4269C9A4F0036A75E /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBC269C9A4F0036A75E /* libjxl_threads.a */; };
 		85E59CC5269C9A4F0036A75E /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBC269C9A4F0036A75E /* libjxl_threads.a */; };
 		85E59CC6269C9A4F0036A75E /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBD269C9A4F0036A75E /* libhwy.a */; };
 		85E59CC7269C9A4F0036A75E /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBD269C9A4F0036A75E /* libhwy.a */; };
 		85E59CC8269C9A4F0036A75E /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBE269C9A4F0036A75E /* libjxl.a */; };
 		85E59CC9269C9A4F0036A75E /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBE269C9A4F0036A75E /* libjxl.a */; };
-		85E59CCA269C9A4F0036A75E /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */; };
-		85E59CCB269C9A4F0036A75E /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */; };
-		85E59CCC269C9A4F0036A75E /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */; };
-		85E59CCD269C9A4F0036A75E /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */; };
-		85E59CCF269C9A4F0036A75E /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC1269C9A4F0036A75E /* libskcms.a */; };
 		85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */; };
 		85FC6DD025BAC56E00A1AAF4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC6DCE25BAC56E00A1AAF4 /* PreviewViewController.xib */; };
-		85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85FC6E5025BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 		85FC6E5125BAD03500A1AAF4 /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 		E99A66BF2745FA670008848F /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A66BE2745FA670008848F /* QuickLookThumbnailing.framework */; platformFilter = maccatalyst; };
 		E99A66C02745FA670008848F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */; };
 		E99A66C32745FA670008848F /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A66C22745FA670008848F /* ThumbnailProvider.swift */; };
-		E99A66C82745FA670008848F /* JXQuickLookThumbnail.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E99A66CC2745FB620008848F /* libbrotlicommon-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */; };
-		E99A66CD2745FB620008848F /* libbrotlidec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBB269C9A4F0036A75E /* libbrotlidec-static.a */; };
+		E99A66C82745FA670008848F /* JXQuickLookThumbnail.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E99A66CE2745FB620008848F /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C090925C6566400BAFE90 /* libc++.1.tbd */; };
 		E99A66CF2745FB620008848F /* libjxl_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBC269C9A4F0036A75E /* libjxl_threads.a */; };
 		E99A66D02745FB620008848F /* libhwy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBD269C9A4F0036A75E /* libhwy.a */; };
-		E99A66D12745FB620008848F /* libskcms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CC1269C9A4F0036A75E /* libskcms.a */; };
 		E99A66D22745FB620008848F /* libjxl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBE269C9A4F0036A75E /* libjxl.a */; };
-		E99A66D32745FB620008848F /* libbrotlienc-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */; };
 		E99A66D6274603540008848F /* JXL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC6E4F25BAD03500A1AAF4 /* JXL.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,24 +111,44 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */ = {
+		85FC6DD625BAC56E00A1AAF4 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E99A66C82745FA670008848F /* JXQuickLookThumbnail.appex in Embed App Extensions */,
-				85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed App Extensions */,
+				E99A66C82745FA670008848F /* JXQuickLookThumbnail.appex in Embed Foundation Extensions */,
+				85FC6DD525BAC56E00A1AAF4 /* JXQuickLook.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		511A08CD2A35475900A2C2EB /* libbrotlicommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbrotlicommon.a; sourceTree = "<group>"; };
+		511A08CE2A35475900A2C2EB /* libbrotlidec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbrotlidec.a; sourceTree = "<group>"; };
+		511A08D32A35479300A2C2EB /* cms_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms_interface.h; sourceTree = "<group>"; };
+		511A08D42A3547C500A2C2EB /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		511A32A72A4A459300F72A05 /* NSScreenExtension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = NSScreenExtension.swift; sourceTree = "<group>"; };
+		512A21842A533701001E63F3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		512A21872A533716001E63F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		51369D2C2A3811BA00A1F1F1 /* EnumExtensions.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = EnumExtensions.swift; sourceTree = "<group>"; };
+		518BBC2C2A4F7B9B004B4F9D /* NSImageExtension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = NSImageExtension.swift; sourceTree = "<group>"; };
+		51A571882A36990C0003E685 /* MetalImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalImageView.swift; sourceTree = "<group>"; };
+		51D7042D2A4A05A400A462D6 /* OSLogExtension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = OSLogExtension.swift; sourceTree = "<group>"; };
+		51E49F992A562D70003C429B /* CIImageExtension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
+		51EEA2912A4FCE3A001F20AA /* disableHighDynamicRange */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = disableHighDynamicRange; sourceTree = "<group>"; };
+		51EEA2922A4FCE3A001F20AA /* enableHighDynamicRange */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = enableHighDynamicRange; sourceTree = "<group>"; };
+		51EEA2932A4FCE3A001F20AA /* disableToneMapping */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = disableToneMapping; sourceTree = "<group>"; };
+		51EEA2942A4FCE3A001F20AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		51EEA2952A4FCE3A001F20AA /* streamLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = streamLog; sourceTree = "<group>"; };
+		51EEA2962A4FCE3A001F20AA /* enableToneMapping */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = enableToneMapping; sourceTree = "<group>"; };
+		51EEA2972A4FCE3A001F20AA /* enableExtendedDynamicRange */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = enableExtendedDynamicRange; sourceTree = "<group>"; };
+		51EEA2982A4FCE3A001F20AA /* disableExtendedDynamicRange */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = disableExtendedDynamicRange; sourceTree = "<group>"; };
 		8573555D25B56054005FF7C2 /* JXLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8573556025B56054005FF7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8573556225B56054005FF7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8573556025B56054005FF7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8573556225B56054005FF7C2 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8573556425B56054005FF7C2 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		8573556625B56055005FF7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8573556925B56055005FF7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,13 +182,9 @@
 		85E59CB7269C9A4F0036A75E /* decode_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_cxx.h; sourceTree = "<group>"; };
 		85E59CB8269C9A4F0036A75E /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
 		85E59CB9269C9A4F0036A75E /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
-		85E59CBB269C9A4F0036A75E /* libbrotlidec-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libbrotlidec-static.a"; sourceTree = "<group>"; };
 		85E59CBC269C9A4F0036A75E /* libjxl_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjxl_threads.a; sourceTree = "<group>"; };
 		85E59CBD269C9A4F0036A75E /* libhwy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhwy.a; sourceTree = "<group>"; };
 		85E59CBE269C9A4F0036A75E /* libjxl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjxl.a; sourceTree = "<group>"; };
-		85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libbrotlienc-static.a"; sourceTree = "<group>"; };
-		85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libbrotlicommon-static.a"; sourceTree = "<group>"; };
-		85E59CC1269C9A4F0036A75E /* libskcms.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libskcms.a; sourceTree = "<group>"; };
 		85FC6DC825BAC56E00A1AAF4 /* JXQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FC6DC925BAC56E00A1AAF4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		85FC6DCC25BAC56E00A1AAF4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -161,7 +192,7 @@
 		85FC6DD125BAC56E00A1AAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FC6DD225BAC56E00A1AAF4 /* JXQuickLook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JXQuickLook.entitlements; sourceTree = "<group>"; };
 		85FC6E4725BAD00000A1AAF4 /* JXQuickLook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXQuickLook-Bridging-Header.h"; sourceTree = "<group>"; };
-		85FC6E4F25BAD03500A1AAF4 /* JXL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXL.swift; sourceTree = "<group>"; };
+		85FC6E4F25BAD03500A1AAF4 /* JXL.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = JXL.swift; sourceTree = "<group>"; };
 		E99A66BD2745FA670008848F /* JXQuickLookThumbnail.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXQuickLookThumbnail.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99A66BE2745FA670008848F /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
 		E99A66C22745FA670008848F /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
@@ -175,13 +206,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85E59CCC269C9A4F0036A75E /* libbrotlicommon-static.a in Frameworks */,
-				85E59CC2269C9A4F0036A75E /* libbrotlidec-static.a in Frameworks */,
+				511A08D02A35475900A2C2EB /* libbrotlicommon.a in Frameworks */,
+				511A08D12A35475900A2C2EB /* libbrotlidec.a in Frameworks */,
 				859C091425C656DE00BAFE90 /* libc++.tbd in Frameworks */,
 				85E59CC4269C9A4F0036A75E /* libjxl_threads.a in Frameworks */,
 				85E59CC6269C9A4F0036A75E /* libhwy.a in Frameworks */,
 				85E59CC8269C9A4F0036A75E /* libjxl.a in Frameworks */,
-				85E59CCA269C9A4F0036A75E /* libbrotlienc-static.a in Frameworks */,
 				859C0BA725C7E22800BAFE90 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,14 +234,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85E59CCD269C9A4F0036A75E /* libbrotlicommon-static.a in Frameworks */,
-				85E59CC3269C9A4F0036A75E /* libbrotlidec-static.a in Frameworks */,
+				511A08D62A354AD300A2C2EB /* libbrotlicommon.a in Frameworks */,
+				511A08D52A354ABC00A2C2EB /* libbrotlidec.a in Frameworks */,
 				859C090A25C6566400BAFE90 /* libc++.1.tbd in Frameworks */,
 				85E59CC5269C9A4F0036A75E /* libjxl_threads.a in Frameworks */,
 				85E59CC7269C9A4F0036A75E /* libhwy.a in Frameworks */,
-				85E59CCF269C9A4F0036A75E /* libskcms.a in Frameworks */,
 				85E59CC9269C9A4F0036A75E /* libjxl.a in Frameworks */,
-				85E59CCB269C9A4F0036A75E /* libbrotlienc-static.a in Frameworks */,
 				85FC6DCA25BAC56E00A1AAF4 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,14 +248,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99A66CC2745FB620008848F /* libbrotlicommon-static.a in Frameworks */,
-				E99A66CD2745FB620008848F /* libbrotlidec-static.a in Frameworks */,
+				511A08D72A354B1200A2C2EB /* libbrotlicommon.a in Frameworks */,
+				511A08D82A354B1600A2C2EB /* libbrotlidec.a in Frameworks */,
 				E99A66CE2745FB620008848F /* libc++.1.tbd in Frameworks */,
 				E99A66CF2745FB620008848F /* libjxl_threads.a in Frameworks */,
 				E99A66D02745FB620008848F /* libhwy.a in Frameworks */,
-				E99A66D12745FB620008848F /* libskcms.a in Frameworks */,
 				E99A66D22745FB620008848F /* libjxl.a in Frameworks */,
-				E99A66D32745FB620008848F /* libbrotlienc-static.a in Frameworks */,
 				E99A66BF2745FA670008848F /* QuickLookThumbnailing.framework in Frameworks */,
 				E99A66C02745FA670008848F /* Quartz.framework in Frameworks */,
 			);
@@ -236,10 +262,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51EEA2902A4FCD74001F20AA /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				51EEA2982A4FCE3A001F20AA /* disableExtendedDynamicRange */,
+				51EEA2912A4FCE3A001F20AA /* disableHighDynamicRange */,
+				51EEA2932A4FCE3A001F20AA /* disableToneMapping */,
+				51EEA2972A4FCE3A001F20AA /* enableExtendedDynamicRange */,
+				51EEA2922A4FCE3A001F20AA /* enableHighDynamicRange */,
+				51EEA2962A4FCE3A001F20AA /* enableToneMapping */,
+				51EEA2942A4FCE3A001F20AA /* README.md */,
+				51EEA2952A4FCE3A001F20AA /* streamLog */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		8573555425B56054005FF7C2 = {
 			isa = PBXGroup;
 			children = (
 				85E59CA6269C9A4F0036A75E /* jpeg-xl */,
+				51EEA2902A4FCD74001F20AA /* scripts */,
 				8573555F25B56054005FF7C2 /* JXLook */,
 				8573557425B56055005FF7C2 /* JXLookTests */,
 				8573557F25B56055005FF7C2 /* JXLookUITests */,
@@ -270,8 +312,16 @@
 				8573556225B56054005FF7C2 /* ViewController.swift */,
 				8598D00E25B805AE00C08958 /* CenterClipView.swift */,
 				8573556425B56054005FF7C2 /* Document.swift */,
+				51E49F992A562D70003C429B /* CIImageExtension.swift */,
+				51369D2C2A3811BA00A1F1F1 /* EnumExtensions.swift */,
+				51A571882A36990C0003E685 /* MetalImageView.swift */,
+				518BBC2C2A4F7B9B004B4F9D /* NSImageExtension.swift */,
+				511A32A72A4A459300F72A05 /* NSScreenExtension.swift */,
+				51D7042D2A4A05A400A462D6 /* OSLogExtension.swift */,
+				512A21842A533701001E63F3 /* Settings.swift */,
 				8573556625B56055005FF7C2 /* Assets.xcassets */,
 				8573556825B56055005FF7C2 /* Main.storyboard */,
+				512A21862A533716001E63F3 /* Settings.storyboard */,
 				8573556B25B56055005FF7C2 /* Info.plist */,
 				8573556C25B56055005FF7C2 /* JXLook.entitlements */,
 				857355F125B5624E005FF7C2 /* JXLook-Bridging-Header.h */,
@@ -329,6 +379,7 @@
 		85E59CA8269C9A4F0036A75E /* jxl */ = {
 			isa = PBXGroup;
 			children = (
+				511A08D32A35479300A2C2EB /* cms_interface.h */,
 				85E59CA9269C9A4F0036A75E /* resizable_parallel_runner_cxx.h */,
 				85E59CAA269C9A4F0036A75E /* color_encoding.h */,
 				85E59CAB269C9A4F0036A75E /* types.h */,
@@ -346,6 +397,7 @@
 				85E59CB7269C9A4F0036A75E /* decode_cxx.h */,
 				85E59CB8269C9A4F0036A75E /* encode.h */,
 				85E59CB9269C9A4F0036A75E /* decode.h */,
+				511A08D42A3547C500A2C2EB /* version.h */,
 			);
 			path = jxl;
 			sourceTree = "<group>";
@@ -353,13 +405,11 @@
 		85E59CBA269C9A4F0036A75E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				85E59CBB269C9A4F0036A75E /* libbrotlidec-static.a */,
+				511A08CD2A35475900A2C2EB /* libbrotlicommon.a */,
+				511A08CE2A35475900A2C2EB /* libbrotlidec.a */,
 				85E59CBC269C9A4F0036A75E /* libjxl_threads.a */,
 				85E59CBD269C9A4F0036A75E /* libhwy.a */,
 				85E59CBE269C9A4F0036A75E /* libjxl.a */,
-				85E59CBF269C9A4F0036A75E /* libbrotlienc-static.a */,
-				85E59CC0269C9A4F0036A75E /* libbrotlicommon-static.a */,
-				85E59CC1269C9A4F0036A75E /* libskcms.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -397,7 +447,7 @@
 				8573555925B56054005FF7C2 /* Sources */,
 				8573555A25B56054005FF7C2 /* Frameworks */,
 				8573555B25B56054005FF7C2 /* Resources */,
-				85FC6DD625BAC56E00A1AAF4 /* Embed App Extensions */,
+				85FC6DD625BAC56E00A1AAF4 /* Embed Foundation Extensions */,
 				859C0BA925C7E22900BAFE90 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -487,8 +537,9 @@
 		8573555525B56054005FF7C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					8573555C25B56054005FF7C2 = {
 						CreatedOnToolsVersion = 12.2;
@@ -538,8 +589,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EEA29F2A4FCE3B001F20AA /* enableExtendedDynamicRange in Resources */,
+				51EEA29C2A4FCE3A001F20AA /* README.md in Resources */,
+				512A21882A533716001E63F3 /* Settings.storyboard in Resources */,
 				8573556725B56055005FF7C2 /* Assets.xcassets in Resources */,
+				51EEA29E2A4FCE3B001F20AA /* enableToneMapping in Resources */,
+				51EEA2A02A4FCE3B001F20AA /* disableExtendedDynamicRange in Resources */,
 				8573556A25B56055005FF7C2 /* Main.storyboard in Resources */,
+				51EEA29B2A4FCE3A001F20AA /* disableToneMapping in Resources */,
+				51EEA29D2A4FCE3B001F20AA /* streamLog in Resources */,
+				51EEA2992A4FCE3A001F20AA /* disableHighDynamicRange in Resources */,
+				51EEA29A2A4FCE3A001F20AA /* enableHighDynamicRange in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +643,13 @@
 				8573556325B56054005FF7C2 /* ViewController.swift in Sources */,
 				8573556125B56054005FF7C2 /* AppDelegate.swift in Sources */,
 				8573556525B56054005FF7C2 /* Document.swift in Sources */,
+				511A32A82A4A459300F72A05 /* NSScreenExtension.swift in Sources */,
+				51E49F9A2A562D70003C429B /* CIImageExtension.swift in Sources */,
+				51A571892A36990C0003E685 /* MetalImageView.swift in Sources */,
+				51D7042E2A4A05A400A462D6 /* OSLogExtension.swift in Sources */,
+				518BBC2D2A4F7B9B004B4F9D /* NSImageExtension.swift in Sources */,
+				51369D2D2A3811BA00A1F1F1 /* EnumExtensions.swift in Sources */,
+				512A21852A533701001E63F3 /* Settings.swift in Sources */,
 				8598D00F25B805AE00C08958 /* CenterClipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,8 +674,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */,
 				85FC6E5125BAD03500A1AAF4 /* JXL.swift in Sources */,
+				5147148E2A38C308000A664A /* EnumExtensions.swift in Sources */,
+				511A32A52A4A093C00F72A05 /* OSLogExtension.swift in Sources */,
+				85FC6DCD25BAC56E00A1AAF4 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +686,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99A66D6274603540008848F /* JXL.swift in Sources */,
+				5147148F2A38C345000A664A /* EnumExtensions.swift in Sources */,
+				511A32A62A4A094D00F72A05 /* OSLogExtension.swift in Sources */,
 				E99A66C32745FA670008848F /* ThumbnailProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,6 +718,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		512A21862A533716001E63F3 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				512A21872A533716001E63F3 /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
 		8573556825B56055005FF7C2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -701,6 +780,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -718,7 +798,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2021-2023 Yung-Luen Lan";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -763,6 +844,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -774,7 +856,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2021-2023 Yung-Luen Lan";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -795,6 +878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -833,6 +917,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -865,6 +950,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				INFOPLIST_FILE = JXLookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -872,7 +958,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -887,6 +973,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				INFOPLIST_FILE = JXLookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -894,7 +981,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.JXLookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -908,6 +995,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				INFOPLIST_FILE = JXLookUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -928,6 +1016,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				INFOPLIST_FILE = JXLookUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -950,6 +1039,7 @@
 				CODE_SIGN_ENTITLEMENTS = JXQuickLook/JXQuickLook.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
@@ -981,6 +1071,7 @@
 				CODE_SIGN_ENTITLEMENTS = JXQuickLook/JXQuickLook.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
@@ -1011,9 +1102,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXQuickLookThumbnail/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JXQuickLookThumbnail;
@@ -1045,9 +1137,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z8M6R7T8R8;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/jpeg-xl/include/**";
 				INFOPLIST_FILE = JXQuickLookThumbnail/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JXQuickLookThumbnail;
